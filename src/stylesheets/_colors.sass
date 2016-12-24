@@ -1,0 +1,74 @@
+// *********************************************************
+//
+// Colors Variables
+//
+// *********************************************************
+
+//--- Black and White colors ---//
+$c-white : #fff
+$c-black : #000
+
+//--- Gray variants ---//
+$c-gray         : #d1d3d5 // Base gray
+$c-gray-scale-1 : mix($c-white, $c-gray, 60%)
+$c-gray-scale-2 : mix($c-white, $c-gray, 40%)
+$c-gray-scale-3 : mix($c-white, $c-gray, 20%)
+$c-gray-scale-4 : mix($c-black, $c-gray, 20%)
+$c-gray-scale-5 : mix($c-black, $c-gray, 40%)
+$c-gray-scale-6 : mix($c-black, $c-gray, 60%)
+
+//--- Theme colors ---//
+$c-primary : #113a5f
+$c-success : #67a039
+$c-danger  : #dd2c00
+$c-warning : #ff8f00
+$c-info    : #2370b8
+
+//--- Base Color fot all texts ---//
+$c-base       : $c-gray-scale-6
+$c-bg-base    : $c-white
+$c-silver     : darken($c-white, 5%)
+$c-link       : $c-info
+$c-link-hover : lighten($c-link, 15%)
+
+//--- LKD Color variants ---//
+//
+$c-lkd         : #ffd600
+$c-lkd-scale-1 : mix($c-white, $c-lkd, 60%)
+$c-lkd-scale-2 : mix($c-white, $c-lkd, 40%)
+$c-lkd-scale-3 : mix($c-white, $c-lkd, 20%)
+$c-lkd-scale-4 : mix($c-black, $c-lkd, 20%)
+
+//--- default button colors variants ---//
+$c-btn-bg-default       : $c-gray
+$c-btn-default          : $c-base
+$c-btn-bg-default-hover : darken($c-btn-bg-default, 2%)
+
+//--- LKD button colors variants ---//
+$c-btn-bg-lkd       : $c-lkd
+$c-btn-lkd          : $c-base
+$c-btn-bg-lkd-hover : darken($c-btn-bg-lkd, 2%)
+
+//--- primary button colors variants ---//
+$c-btn-bg-primary       : mix($c-white, $c-primary, 20%)
+$c-btn-primary          : $c-white
+$c-btn-bg-primary-hover : darken($c-btn-bg-primary, 5%)
+
+//--- white button colors variants ---//
+$c-btn-bg-white       : $c-white
+$c-btn-white          : $c-base
+$c-btn-bg-white-hover : darken($c-btn-bg-white, 5%)
+
+//--- Input colors variants ---//
+$c-input-bg               : $c-white
+$c-input-color            : $c-base
+$c-input-box-shadow-focus : $c-info
+$c-input-border           : $c-gray
+$c-input-border-focus     : $c-primary
+$c-input-bg-disabled      : $c-silver
+
+//--- Checkbox and Radio buttons colors variants ---//
+$c-bg-checkbox-hover      : $c-gray
+$c-bg-checkbox-unselected : $c-silver
+$c-bg-checkbox-select     : lighten($c-info, 10%)
+$c-bg-checkbox-disabled   : $c-gray-scale-2

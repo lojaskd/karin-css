@@ -1,0 +1,129 @@
+/* line 1, src/stylesheets/base/reset.sass */
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+fieldset,
+legend,
+textarea,
+pre,
+code,
+iframe,
+figure,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* line 28, src/stylesheets/base/reset.sass */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+
+/* line 37, src/stylesheets/base/reset.sass */
+
+ul,
+ol {
+  list-style: none;
+}
+
+
+/* line 41, src/stylesheets/base/reset.sass */
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+
+/* line 47, src/stylesheets/base/reset.sass */
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* line 52, src/stylesheets/base/reset.sass */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+
+/* line 59, src/stylesheets/base/reset.sass */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* line 64, src/stylesheets/base/reset.sass */
+
+img,
+embed,
+object,
+audio,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+
+/* line 72, src/stylesheets/base/reset.sass */
+
+iframe {
+  border: 0;
+}
+
+
+/* line 75, src/stylesheets/base/reset.sass */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* line 79, src/stylesheets/base/reset.sass */
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+}

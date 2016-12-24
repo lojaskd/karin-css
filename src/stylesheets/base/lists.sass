@@ -1,0 +1,18 @@
+@import "../settings"
+
+ul,
+ol
+  padding-left: to-rem($spacing-base)
+  margin-bottom: to-rem($spacing-small)
+
+ul
+  list-style: disc
+
+ol
+  list-style: decimal
+
+li
+  ul,
+  ol
+    padding-left: to-rem($spacing-small)
+    margin-bottom: 0

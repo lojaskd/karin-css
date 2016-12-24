@@ -1,0 +1,111 @@
+@import "../settings"
+
+@import url('//fonts.googleapis.com/css?family=Open+Sans:300,400,700')
+
+html
+  font-size: $size-unit-px
+  font-smallooth: always
+  -webkit-font-smalloothing: antialiased
+  -moz-osx-font-smalloothing: grayscale
+  text-rendering: optimizeLegibility
+
+body
+  color: $c-base
+  font-size: $size-unit-rem
+  font-family: $font-family-base
+  font-weight: $font-weight-normal
+  line-height: $line-height-base
+  letter-spacing: .02rem
+
+a
+  color: $c-link
+  text-decoration: none
+
+  &:hover,
+  &:focus
+    color: $c-link-hover
+    text-decoration: underline
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+  margin: 0 0 to-rem($spacing-small)
+
+h1
+  font-size: to-rem($font-size-h1)
+
+h2
+  font-size: to-rem($font-size-h2)
+
+h3
+  font-size: to-rem($font-size-h3)
+
+h4
+  font-size: to-rem($font-size-h4)
+
+h5
+  font-size: to-rem($font-size-h5)
+
+h6
+  font-size: to-rem($font-size-h6)
+
+em
+  font-style: italic
+
+strong
+  font-weight: $font-weight-bold
+
+small
+  font-size: 80%
+  color: $c-gray-scale-5
+
+big
+  font-size: 120%
+
+abbr
+  border-bottom: 1px dashed $c-link
+  background-color: $c-silver
+  cursor: help
+
+pre,
+code
+  font-family: $font-family-monospace
+
+code
+  border-radius: 2px
+  color: $c-gray-scale-6
+  background-color: $c-silver
+  padding: to-rem($spacing-xsmall / 2) to-rem($spacing-xsmall)
+
+pre
+  margin-top: 0
+  margin-bottom: 1rem
+  background-color: $c-silver
+  font-size: $font-size-small
+  padding: to-rem($spacing-small)
+  overflow: auto
+
+  code
+    color: inherit
+    font-size: inherit
+    background: none
+    border-radius: 0
+    padding: 0
+
+blockquote
+  padding: to-rem($spacing-small)
+  text-align: center
+  font-size: to-rem($size-unit-px * 1.4) // ~20px
+  background-color: rgba($c-silver, .8)
+  margin: 0 0 to-rem($spacing-base)
+  transition: background-color .15s linear
+
+  &:hover
+    background-color: rgba($c-silver, .4)
+
+  *:last-child
+    margin-bottom: 0

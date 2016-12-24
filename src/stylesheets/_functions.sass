@@ -1,0 +1,15 @@
+
+@function calc-percent($target-px, $container-px)
+  @return ($target-px / $container-px) * 100%
+
+@function remove-unitless($unit)
+  @if (unitless($unit))
+    @return $unit * 1px
+  @else
+    @return $unit
+
+@function to-rem($px)
+  @return (round(remove-unitless($px)) / remove-unitless($size-unit-px))+rem
+
+@function to-em($px)
+  @return (round(remove-unitless($px)) / remove-unitless($size-unit-px))+em

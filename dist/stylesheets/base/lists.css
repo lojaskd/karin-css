@@ -1,0 +1,30 @@
+/* line 3, src/stylesheets/base/lists.sass */
+
+ul,
+ol {
+  padding-left: 2.14286rem;
+  margin-bottom: 1.07143rem;
+}
+
+
+/* line 8, src/stylesheets/base/lists.sass */
+
+ul {
+  list-style: disc;
+}
+
+
+/* line 11, src/stylesheets/base/lists.sass */
+
+ol {
+  list-style: decimal;
+}
+
+
+/* line 15, src/stylesheets/base/lists.sass */
+
+li ul,
+li ol {
+  padding-left: 1.07143rem;
+  margin-bottom: 0;
+}
