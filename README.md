@@ -1,1 +1,1 @@
-# Base UI for LojasKD.com.br
+# Base UI 
