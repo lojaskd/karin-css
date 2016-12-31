@@ -1,7 +1,7 @@
 {
-  "name": "base-ui",
+  "name": "karin",
   "version": "1.0.0",
-  "description": "Base UI for LojasKD.com.br",
+  "description": "Karin é uma estrutura SASS construída para fornecer estilos de base, componentes CSS e prototipagem estática rápida para a LojasKD.com.br",
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp serve",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nandomoreirame/base-ui.git"
+    "url": "git+https://github.com/nandomoreirame/karin.git"
   },
   "author": "Fernando Moreira",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nandomoreirame/base-ui/issues"
+    "url": "https://github.com/nandomoreirame/karin/issues"
   },
-  "homepage": "https://github.com/nandomoreirame/base-ui#readme",
+  "homepage": "https://github.com/nandomoreirame/karin#readme",
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-preset-es2015": "^6.18.0",

@@ -1,0 +1,24 @@
+{
+  "name": "karin",
+  "description": "Karin é uma estrutura SASS construída para fornecer estilos de base, componentes CSS e prototipagem estática rápida para a LojasKD.com.br",
+  "main": "gulpfile.babel.js",
+  "authors": [
+    "Fernando Moreira"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "base",
+    "sass",
+    "css",
+    "stylesheet",
+    "ui"
+  ],
+  "homepage": "https://github.com/nandomoreirame/karin",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
