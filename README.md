@@ -1,6 +1,7 @@
 # Bem-vindo ao Karin
 
-Karin é uma estrutura SASS construída para fornecer estilos de base, componentes CSS e prototipagem estática rápida para a [LojasKD.com.br](https://www.lojaskd.com.br/).
+> Karin é uma estrutura SASS construída para fornecer estilos de base, componentes CSS
+> e prototipagem estática rápida para a [LojasKD.com.br](https://www.lojaskd.com.br/).
 
 ---
 
