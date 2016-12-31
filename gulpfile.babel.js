@@ -8,7 +8,7 @@ import BrowserSync from 'browser-sync';
 const $ = Plugins();
 const BSync = BrowserSync.create();
 
-Gulp.task('stylesheets', () => Gulp.src([ `src/stylesheets/**/*.sass` ])
+Gulp.task('stylesheets', () => Gulp.src([ `src/**/*.sass` ])
   .pipe($.plumber({
     errorHandler: $.notify.onError({
       title   : 'Gulp',
@@ -60,7 +60,7 @@ Gulp.task('serve', ['stylesheets'], () => {
   BSync.init({
     server: './dist'
   });
-  Gulp.watch(`./src/stylesheets/**/*.sass`, ['stylesheets']);
+  Gulp.watch(`./src/**/*.sass`, ['stylesheets']);
   Gulp.watch(`./dist/**/*`).on('change', BSync.reload);
 });
 

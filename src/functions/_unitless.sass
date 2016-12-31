@@ -1,0 +1,6 @@
+
+@function remove-unitless($unit)
+  @if (unitless($unit))
+    @return $unit * 1px
+  @else
+    @return $unit
