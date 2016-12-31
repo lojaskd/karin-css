@@ -1,4 +1,4 @@
-/* line 3, src/stylesheets/base/lists.sass */
+/* line 3, src/base/lists.sass */
 
 ul,
 ol {
@@ -7,21 +7,21 @@ ol {
 }
 
 
-/* line 8, src/stylesheets/base/lists.sass */
+/* line 8, src/base/lists.sass */
 
 ul {
   list-style: disc;
 }
 
 
-/* line 11, src/stylesheets/base/lists.sass */
+/* line 11, src/base/lists.sass */
 
 ol {
   list-style: decimal;
 }
 
 
-/* line 15, src/stylesheets/base/lists.sass */
+/* line 15, src/base/lists.sass */
 
 li ul,
 li ol {

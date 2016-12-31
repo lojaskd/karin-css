@@ -1,7 +1,7 @@
 {
   "name": "karin",
   "version": "1.0.0",
-  "description": "Karin é uma estrutura SASS construída para fornecer estilos de base, componentes CSS e prototipagem estática rápida para a LojasKD.com.br",
+  "description": "O kit de ferramentas CSS que dão beleza aos projeto da LojasKD",
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp serve",
@@ -25,13 +25,16 @@
     "gulp-autoprefixer": "^3.1.1",
     "gulp-combine-mq": "^0.4.0",
     "gulp-cssnano": "^2.1.2",
+    "gulp-data": "^1.2.1",
     "gulp-jsbeautifier": "^2.0.3",
     "gulp-load-plugins": "^1.4.0",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.0.0",
     "gulp-size": "^2.1.0",
+    "gulp-util": "^3.0.8",
     "node-bourbon": "^4.2.8"
   }
 }

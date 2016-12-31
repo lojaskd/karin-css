@@ -1,4 +1,4 @@
-/* line 3, src/stylesheets/components/buttons.sass */
+/* line 3, src/components/buttons.sass */
 
 .lkd-button {
   position: relative;
@@ -31,7 +31,7 @@
 }
 
 
-/* line 28, src/stylesheets/components/buttons.sass */
+/* line 28, src/components/buttons.sass */
 
 a.lkd-button:hover,
 a.lkd-button:focus {

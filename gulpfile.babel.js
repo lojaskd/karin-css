@@ -4,17 +4,20 @@ import Gulp from 'gulp';
 import Plugins from 'gulp-load-plugins';
 import Bourbon from 'node-bourbon';
 import BrowserSync from 'browser-sync';
+import Fs from 'fs';
 
 const $ = Plugins();
 const BSync = BrowserSync.create();
 
+const plumberHandler = {
+  errorHandler: $.notify.onError({
+    title   : 'Gulp',
+    message : 'Error: <%= error.message %>'
+  })
+};
+
 Gulp.task('stylesheets', () => Gulp.src([ `src/**/*.sass` ])
-  .pipe($.plumber({
-    errorHandler: $.notify.onError({
-      title   : 'Gulp',
-      message : 'Error: <%= error.message %>'
-    })
-  }))
+  .pipe($.plumber(plumberHandler))
   .pipe($.sass({
     compass: true,
     sourcemap: false,
@@ -53,13 +56,25 @@ Gulp.task('stylesheets', () => Gulp.src([ `src/**/*.sass` ])
   .pipe($.cssnano())
   .pipe($.size({ title: 'Stylesheets minified!', gzip: false, showFiles: true }))
   .pipe(Gulp.dest(`dist/stylesheets`))
-  .pipe(BSync.stream())
+  .pipe($.plumber.stop()));
+
+Gulp.task('docs', () => Gulp.src([`docs/*.pug`])
+  .pipe($.plumber(plumberHandler))
+  .pipe($.data((file) => JSON.parse(
+    Fs.readFileSync('docs/config.json')
+  )))
+  .pipe($.pug({
+    locals: { production: $.util.env.prod ? true : false },
+    pretty: true
+  }))
+  .pipe(Gulp.dest(`dist/`))
   .pipe($.plumber.stop()));
 
 Gulp.task('serve', ['stylesheets'], () => {
   BSync.init({
     server: './dist'
   });
+  Gulp.watch(`./docs/**/*.{pug,json}`, ['docs']);
   Gulp.watch(`./src/**/*.sass`, ['stylesheets']);
   Gulp.watch(`./dist/**/*`).on('change', BSync.reload);
 });
