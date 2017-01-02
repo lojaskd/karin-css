@@ -200,7 +200,7 @@ th {
 hr {
   border: none;
   border-bottom: 1px solid #f2f2f2;
-  margin: 2.14286rem 0;
+  margin: 1.875rem 0;
 }
 
 
@@ -243,7 +243,7 @@ hr {
 
 .u-highlight {
   color: #545455;
-  padding: 0 0.57143rem;
+  padding: 0 0.5rem;
   border-radius: 2px;
   background-color: #ffef99;
 }
@@ -254,7 +254,7 @@ hr {
 html {
   -webkit-box-sizing: initial;
   box-sizing: initial;
-  font-size: 14px;
+  font-size: 16px;
   font-smallooth: always;
   -webkit-font-smalloothing: antialiased;
   -moz-osx-font-smalloothing: grayscale;
@@ -286,7 +286,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #4b96dd;
+  color: #1b568d;
   text-decoration: underline;
 }
 
@@ -300,49 +300,49 @@ h4,
 h5,
 h6,
 p {
-  margin: 0 0 1.07143rem;
+  margin: 0 0 0.9375rem;
 }
 
 
 /* line 39, sass/base/typography.sass */
 
 h1 {
-  font-size: 2.42857rem;
+  font-size: 2.25rem;
 }
 
 
 /* line 42, sass/base/typography.sass */
 
 h2 {
-  font-size: 2.14286rem;
+  font-size: 2rem;
 }
 
 
 /* line 45, sass/base/typography.sass */
 
 h3 {
-  font-size: 1.85714rem;
+  font-size: 1.75rem;
 }
 
 
 /* line 48, sass/base/typography.sass */
 
 h4 {
-  font-size: 1.71429rem;
+  font-size: 1.375rem;
 }
 
 
 /* line 51, sass/base/typography.sass */
 
 h5 {
-  font-size: 1.42857rem;
+  font-size: 1.25rem;
 }
 
 
 /* line 54, sass/base/typography.sass */
 
 h6 {
-  font-size: 1.14286rem;
+  font-size: 1rem;
 }
 
 
@@ -398,7 +398,7 @@ code {
   border-radius: 2px;
   color: #545455;
   background-color: #f2f2f2;
-  padding: 0.28571rem 0.57143rem;
+  padding: 0.25rem 0.5rem;
 }
 
 
@@ -408,8 +408,8 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   background-color: #f2f2f2;
-  font-size: 0.8571rem;
-  padding: 1.07143rem;
+  font-size: 0.875rem;
+  padding: 0.9375rem;
   overflow: auto;
 }
 
@@ -428,11 +428,11 @@ pre code {
 /* line 100, sass/base/typography.sass */
 
 blockquote {
-  padding: 1.07143rem;
+  padding: 0.9375rem;
   text-align: center;
-  font-size: 1.42857rem;
+  font-size: 1.375rem;
   background-color: rgba(242, 242, 242, 0.8);
-  margin: 0 0 2.14286rem;
+  margin: 0 0 1.875rem;
   -webkit-transition: background-color .15s linear;
   transition: background-color .15s linear;
 }
@@ -456,8 +456,8 @@ blockquote *:last-child {
 
 ul,
 ol {
-  padding-left: 2.14286rem;
-  margin-bottom: 1.07143rem;
+  padding-left: 1.875rem;
+  margin-bottom: 0.9375rem;
 }
 
 
@@ -479,7 +479,7 @@ ol {
 
 li ul,
 li ol {
-  padding-left: 1.07143rem;
+  padding-left: 0.9375rem;
   margin-bottom: 0;
 }
 

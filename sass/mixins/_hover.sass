@@ -1,0 +1,20 @@
+=hover
+  &:hover
+    @content
+
+=hover-focus
+  &:focus,
+  &:hover
+    @content
+
+=hover-focus-active
+  &:focus,
+  &:active,
+  &:hover
+    @content
+
+=plain-hover-focus
+  &,
+  &:focus,
+  &:hover
+    @content

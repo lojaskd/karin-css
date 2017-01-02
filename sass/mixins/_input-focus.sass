@@ -1,0 +1,14 @@
+// *********************************************************
+//
+// *********************************************************
+
+=input-control-focus($color, $background, $border: $c-info)
+  &:focus
+    color: $color
+    background-color: $background
+    border-color: $border
+    outline: none
+
+    &::-ms-value
+      color: $color
+      background-color: $background

@@ -1,0 +1,44 @@
+// *********************************************************
+//
+// Placeholder for inputs
+//
+// *********************************************************
+
+%input
+  width: 100%
+  display: block
+  cursor: text
+  background-color: $c-input-bg
+  background-image: none
+  background-clip: padding-box
+  border: 1px solid $c-input-border
+  border-radius: $bd-radius-base
+  line-height: 1
+  vertical-align: middle
+  color: $c-input-color
+  padding: .5em
+  font-family: $font-family-base
+  font-size: $font-size-normal
+  box-shadow: 0 2px 0 rgba(darken($c-input-bg, 20%), .4)
+
+  +transition(box-shadow .15s ease-in-out)
+
+  +appearance(textfield)
+
+  +input-control-focus($c-input-color, $c-input-bg)
+
+  +input-placeholder($c-input-color)
+
+  &::-ms-expand
+    background-color: transparent
+    border: 0
+
+  &--disabled,
+  &:disabled,
+  &[readonly]
+    background-color: $c-input-bg-disabled
+    opacity: 1
+
+  &--disabled,
+  &:disabled
+    cursor: $cursor-disabled

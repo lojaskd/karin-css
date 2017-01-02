@@ -1,0 +1,40 @@
+// *********************************************************
+//
+// Placeholder for buttons
+//
+// *********************************************************
+
+%button
+  position: relative
+  padding: $button-spacing
+  cursor: pointer
+  border: 1px solid transparent
+  display: inline-block
+  vertical-align: middle
+  text-decoration: none
+  text-align: center
+  white-space: nowrap
+  font-family: $font-family-base
+  font-weight: $font-weight-normal
+  line-height: normal
+  user-select: none
+  -webkit-user-drag: none
+  zoom: 1
+
+  +button-size($button-font-size, $button-bd-radius)
+
+  +transition(border-color .2s ease-in-out, color .2s ease-in-out, background-color .2s ease-in-out, transform .015s ease-in-out, box-shadow .015s ease-in-out)
+
+  +appearance(none)
+
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]:focus
+    cursor: not-allowed
+    box-shadow: none
+    opacity: .65
+
+  &:hover,
+  &:focus
+    text-decoration: none
+    outline: none

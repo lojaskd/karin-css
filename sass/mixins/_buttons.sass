@@ -1,0 +1,47 @@
+// *********************************************************
+// ----- button-variant ----- //
+// -> Generates the color variations of buttons
+// *********************************************************
+
+//
+// @parameters
+//    $color - the texto color
+//    $background - the background color
+//    $background-hover - default is empty
+//    $shadow - boolean, default is true
+//
+=button-variant($color, $background, $background-hover: '', $shadow: true)
+  $bg-hover: darken($background, 5%)
+  $bg-active: darken($background, 10%)
+  $bx-shadow: none
+  $bx-shadow-hover: none
+  $bx-shadow-active: none
+
+  @if $background-hover != ''
+    $bg-hover: $background-hover
+    $bg-active: darken($background-hover, 5%)
+
+  @if $shadow == true
+    $bx-shadow: 0 2px 0 rgba(darken($background, 10%), .5)
+    $bx-shadow-hover: 0 2px 0 rgba(darken($background, 15%), .5)
+    $bx-shadow-active: 0 2px 0 rgba(darken($background, 20%), .5)
+
+  color: $color
+  border-color: $background
+  background-color: $background
+  box-shadow: $bx-shadow
+
+  &:hover,
+  &:focus
+    color: darken($color, 6%)
+    border-color: $bg-hover
+    background-color: $bg-hover
+    box-shadow: $bx-shadow-hover
+
+  &:active
+    box-shadow: $bx-shadow-active
+    background-color: $bg-active
+
+=button-size($font-size, $bd-radius)
+  font-size: $font-size
+  border-radius: $bd-radius

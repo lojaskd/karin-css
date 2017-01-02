@@ -1,0 +1,35 @@
+// *********************************************************
+//
+// *********************************************************
+
+=input-placeholder($color)
+  $placeholder-color: rgba($color, .8)
+
+  &::-webkit-input-placeholder
+    color: $placeholder-color
+    opacity: .75
+
+  &:-moz-placeholder
+    color: $placeholder-color
+    opacity: .75
+
+  &:-ms-input-placeholder
+    color: $placeholder-color
+    opacity: .75
+
+  &::-moz-placeholder
+    color: $placeholder-color
+    opacity: .75
+
+  &:focus
+    &::-webkit-input-placeholder
+      opacity: 1
+
+    &:-moz-placeholder
+      opacity: 1
+
+    &:-ms-input-placeholder
+      opacity: 1
+
+    &::-moz-placeholder
+      opacity: 1

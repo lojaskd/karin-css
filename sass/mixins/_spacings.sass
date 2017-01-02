@@ -1,0 +1,27 @@
+// *********************************************************
+// *********************************************************
+
+=make-spacings($prefix: "m", $is-important: false)
+  $important: null
+  $property: 'margin'
+
+  @if $is-important == true
+    $important: !important
+
+  @for $d from 1 through length($array-directions)
+    $_direction : nth($array-directions, $d)
+
+    @for $i from 1 through length($array-spacings)
+      $s        : nth($array-spacings, $i)
+      $_suffix  : unquote(nth($s, 1))
+      $_spacing : nth($s, 2)
+
+      @if $prefix == "p"
+        $property: 'padding'
+
+      @if $_direction == ""
+        .#{$prefix}-#{$_suffix}
+          #{$property}: $_spacing $important
+      @else
+        .#{$prefix}-#{$_direction}-#{$_suffix}
+          #{$property}-#{$_direction}: $_spacing $important

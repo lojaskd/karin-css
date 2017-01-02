@@ -1,18 +1,19 @@
-@import "../settings"
+@import "../configs"
 
 ul,
 ol
-  padding-left: to-rem($spacing-base)
-  margin-bottom: to-rem($spacing-small)
+  &.lkd-list
+    padding-left: to-rem($spacing-base)
+    margin-bottom: to-rem($spacing-small)
+
+  li
+    ul,
+    ol
+      padding-left: to-rem($spacing-small)
+      margin-bottom: 0
 
 ul
   list-style: disc
 
 ol
   list-style: decimal
-
-li
-  ul,
-  ol
-    padding-left: to-rem($spacing-small)
-    margin-bottom: 0

@@ -1,0 +1,33 @@
+
+// *************************************************************************************
+// *
+// * TODO
+// * - REMOVER ANIMACAO COM SVG E APLICAR ANIMACAO USANDO APENAS CSS
+// *
+// *************************************************************************************
+
+%loading
+  text-align: center
+
+  &::before,
+  &::after
+    position: fixed
+    z-index: 9999
+    height: 100%
+    width: 100%
+    left: 0
+    top: 0
+
+  &::before,
+  &::after
+    content: ''
+    display: block
+    background-repeat: no-repeat
+    background-position: 50%
+
+  &::before
+    background-image: url("#{$images-path}/icon.png")
+    background-size: 30px
+
+  &::after
+    background-image: url("#{$images-path}/spin.svg")

@@ -1,0 +1,25 @@
+// *********************************************************
+//
+// Placeholders for checkbox and radio buttons
+//
+// *********************************************************
+
+%checkbox-radio
+  display: block
+  position: relative
+  padding-left: ($checkbox-size + 10)
+  cursor: pointer
+
+  // Hide default browser input
+  input
+    position: absolute
+    z-index: -1
+    opacity: 0
+
+%control__indicator
+  position: absolute
+  left: 0
+  top: 2px
+  height: $checkbox-size
+  width: $checkbox-size
+  background: $c-bg-checkbox-unselected
