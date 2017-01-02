@@ -129,8 +129,8 @@ textarea {
 /* line 34, sass/base/reset.sass */
 
 html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  -webkit-box-sizing: initial;
+  box-sizing: initial;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
 }
@@ -200,7 +200,7 @@ th {
 hr {
   border: none;
   border-bottom: 1px solid #f2f2f2;
-  margin: 1.875rem 0;
+  margin: 2.14286rem 0;
 }
 
 
@@ -243,7 +243,7 @@ hr {
 
 .u-highlight {
   color: #545455;
-  padding: 0 0.5rem;
+  padding: 0 0.57143rem;
   border-radius: 2px;
   background-color: #ffef99;
 }
@@ -252,9 +252,7 @@ hr {
 /* line 5, sass/base/typography.sass */
 
 html {
-  -webkit-box-sizing: initial;
-  box-sizing: initial;
-  font-size: 16px;
+  font-size: 14px;
   font-smallooth: always;
   -webkit-font-smalloothing: antialiased;
   -moz-osx-font-smalloothing: grayscale;
@@ -262,19 +260,23 @@ html {
 }
 
 
-/* line 13, sass/base/typography.sass */
+/* line 12, sass/base/typography.sass */
 
 body {
   color: #545455;
-  font-size: 1rem;
+  font-size: 0.8571rem;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Roboto", "Ubuntu", Arial, Helvetica, sans-serif;
   font-weight: 400;
   line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "calt" 1;
+  -moz-font-feature-settings: "calt" 1;
+  font-feature-settings: "calt" 1;
   letter-spacing: 0.02em;
 }
 
 
-/* line 21, sass/base/typography.sass */
+/* line 22, sass/base/typography.sass */
 
 a {
   color: #2370b8;
@@ -282,7 +284,7 @@ a {
 }
 
 
-/* line 25, sass/base/typography.sass */
+/* line 26, sass/base/typography.sass */
 
 a:hover,
 a:focus {
@@ -291,7 +293,21 @@ a:focus {
 }
 
 
-/* line 30, sass/base/typography.sass */
+/* line 31, sass/base/typography.sass */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  font-weight: 700;
+}
+
+
+/* line 41, sass/base/typography.sass */
 
 h1,
 h2,
@@ -300,67 +316,60 @@ h4,
 h5,
 h6,
 p {
-  margin: 0 0 0.9375rem;
+  margin: 0 0 1.07143rem;
 }
 
 
-/* line 39, sass/base/typography.sass */
+/* line 50, sass/base/typography.sass */
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.28571rem;
 }
 
 
-/* line 42, sass/base/typography.sass */
+/* line 53, sass/base/typography.sass */
 
 h2 {
   font-size: 2rem;
 }
 
 
-/* line 45, sass/base/typography.sass */
+/* line 56, sass/base/typography.sass */
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.78571rem;
 }
 
 
-/* line 48, sass/base/typography.sass */
+/* line 59, sass/base/typography.sass */
 
 h4 {
-  font-size: 1.375rem;
+  font-size: 1.35714rem;
 }
 
 
-/* line 51, sass/base/typography.sass */
+/* line 62, sass/base/typography.sass */
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.28571rem;
 }
 
 
-/* line 54, sass/base/typography.sass */
+/* line 65, sass/base/typography.sass */
 
 h6 {
   font-size: 1rem;
 }
 
 
-/* line 57, sass/base/typography.sass */
+/* line 68, sass/base/typography.sass */
 
 em {
   font-style: italic;
 }
 
 
-/* line 60, sass/base/typography.sass */
-
-strong {
-  font-weight: 700;
-}
-
-
-/* line 63, sass/base/typography.sass */
+/* line 71, sass/base/typography.sass */
 
 small {
   font-size: 80%;
@@ -368,14 +377,21 @@ small {
 }
 
 
-/* line 67, sass/base/typography.sass */
+/* line 75, sass/base/typography.sass */
+
+img {
+  border: 0;
+}
+
+
+/* line 78, sass/base/typography.sass */
 
 big {
   font-size: 120%;
 }
 
 
-/* line 70, sass/base/typography.sass */
+/* line 81, sass/base/typography.sass */
 
 abbr {
   border-bottom: 1px dashed #2370b8;
@@ -384,7 +400,7 @@ abbr {
 }
 
 
-/* line 75, sass/base/typography.sass */
+/* line 86, sass/base/typography.sass */
 
 pre,
 code {
@@ -392,29 +408,29 @@ code {
 }
 
 
-/* line 79, sass/base/typography.sass */
+/* line 90, sass/base/typography.sass */
 
 code {
   border-radius: 2px;
   color: #545455;
   background-color: #f2f2f2;
-  padding: 0.25rem 0.5rem;
+  padding: 0.28571rem 0.57143rem;
 }
 
 
-/* line 85, sass/base/typography.sass */
+/* line 96, sass/base/typography.sass */
 
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
   background-color: #f2f2f2;
-  font-size: 0.875rem;
-  padding: 0.9375rem;
+  font-size: 0.8571rem;
+  padding: 1.07143rem;
   overflow: auto;
 }
 
 
-/* line 93, sass/base/typography.sass */
+/* line 104, sass/base/typography.sass */
 
 pre code {
   color: inherit;
@@ -425,27 +441,27 @@ pre code {
 }
 
 
-/* line 100, sass/base/typography.sass */
+/* line 111, sass/base/typography.sass */
 
 blockquote {
-  padding: 0.9375rem;
+  padding: 1.07143rem;
   text-align: center;
-  font-size: 1.375rem;
+  font-size: 1.42857rem;
   background-color: rgba(242, 242, 242, 0.8);
-  margin: 0 0 1.875rem;
+  margin: 0 0 2.14286rem;
   -webkit-transition: background-color .15s linear;
   transition: background-color .15s linear;
 }
 
 
-/* line 108, sass/base/typography.sass */
+/* line 119, sass/base/typography.sass */
 
 blockquote:hover {
   background-color: rgba(242, 242, 242, 0.4);
 }
 
 
-/* line 111, sass/base/typography.sass */
+/* line 122, sass/base/typography.sass */
 
 blockquote *:last-child {
   margin-bottom: 0;
@@ -456,8 +472,8 @@ blockquote *:last-child {
 
 ul.lkd-list,
 ol.lkd-list {
-  padding-left: 1.875rem;
-  margin-bottom: 0.9375rem;
+  padding-left: 2.14286rem;
+  margin-bottom: 1.07143rem;
 }
 
 
@@ -467,7 +483,7 @@ ul li ul,
 ul li ol,
 ol li ul,
 ol li ol {
-  padding-left: 0.9375rem;
+  padding-left: 1.07143rem;
   margin-bottom: 0;
 }
 

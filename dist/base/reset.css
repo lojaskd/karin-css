@@ -127,8 +127,8 @@ textarea {
 /* line 34, sass/base/reset.sass */
 
 html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  -webkit-box-sizing: initial;
+  box-sizing: initial;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
 }

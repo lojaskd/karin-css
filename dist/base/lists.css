@@ -2,8 +2,8 @@
 
 ul.lkd-list,
 ol.lkd-list {
-  padding-left: 1.875rem;
-  margin-bottom: 0.9375rem;
+  padding-left: 2.14286rem;
+  margin-bottom: 1.07143rem;
 }
 
 
@@ -13,7 +13,7 @@ ul li ul,
 ul li ol,
 ol li ul,
 ol li ol {
-  padding-left: 0.9375rem;
+  padding-left: 1.07143rem;
   margin-bottom: 0;
 }
 
