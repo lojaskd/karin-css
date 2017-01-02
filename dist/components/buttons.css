@@ -1,5 +1,16 @@
 /* line 3, sass/components/buttons.sass */
 
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Roboto", "Ubuntu", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+
+/* line 7, sass/components/buttons.sass */
+
 .lkd-button {
   position: relative;
   cursor: pointer;
@@ -28,10 +39,11 @@
   box-shadow: 0 2px 0 #b6babd;
   border: 1px solid #d1d3d5;
   display: inline-block;
+  letter-spacing: 0.02em;
 }
 
 
-/* line 28, sass/components/buttons.sass */
+/* line 33, sass/components/buttons.sass */
 
 a.lkd-button:hover,
 a.lkd-button:focus {

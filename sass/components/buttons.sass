@@ -1,5 +1,9 @@
 @import "../settings"
 
+#{$all-buttons}
+  font-family: $font-family-base
+  letter-spacing: $letter-spacing-base
+
 .lkd-button
   position: relative
   cursor: pointer
@@ -23,6 +27,7 @@
   box-shadow: 0 2px 0 darken($c-btn-bg-default, 10%)
   border: 1px solid $c-btn-bg-default
   display: inline-block
+  letter-spacing: $letter-spacing-base
 
 a.lkd-button
   &:hover,

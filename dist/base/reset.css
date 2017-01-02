@@ -2,47 +2,111 @@
 
 html,
 body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p,
-ol,
-ul,
-li,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
 dl,
 dt,
 dd,
-blockquote,
+ol,
+ul,
+li,
 fieldset,
+form,
+label,
 legend,
-textarea,
-pre,
-code,
-iframe,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
 figure,
-hr,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
-}
-
-
-/* line 28, sass/base/reset.sass */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+  border: 0;
   font-size: 100%;
-  font-weight: normal;
+  font: inherit;
 }
 
 
-/* line 37, sass/base/reset.sass */
+/* line 20, sass/base/reset.sass */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+
+/* line 24, sass/base/reset.sass */
 
 ul,
 ol {
@@ -50,7 +114,7 @@ ol {
 }
 
 
-/* line 41, sass/base/reset.sass */
+/* line 28, sass/base/reset.sass */
 
 button,
 input,
@@ -60,7 +124,7 @@ textarea {
 }
 
 
-/* line 47, sass/base/reset.sass */
+/* line 34, sass/base/reset.sass */
 
 html {
   -webkit-box-sizing: border-box;
@@ -70,7 +134,7 @@ html {
 }
 
 
-/* line 52, sass/base/reset.sass */
+/* line 39, sass/base/reset.sass */
 
 *,
 *:before,
@@ -84,7 +148,7 @@ html {
 }
 
 
-/* line 59, sass/base/reset.sass */
+/* line 46, sass/base/reset.sass */
 
 html,
 body {
@@ -93,7 +157,7 @@ body {
 }
 
 
-/* line 64, sass/base/reset.sass */
+/* line 51, sass/base/reset.sass */
 
 img,
 embed,
@@ -105,14 +169,14 @@ video {
 }
 
 
-/* line 72, sass/base/reset.sass */
+/* line 59, sass/base/reset.sass */
 
 iframe {
   border: 0;
 }
 
 
-/* line 75, sass/base/reset.sass */
+/* line 62, sass/base/reset.sass */
 
 table {
   border-collapse: collapse;
@@ -120,7 +184,7 @@ table {
 }
 
 
-/* line 79, sass/base/reset.sass */
+/* line 66, sass/base/reset.sass */
 
 td,
 th {
