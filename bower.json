@@ -1,8 +1,8 @@
 {
   "name": "karin",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "O kit de ferramentas CSS que da beleza aos projeto da LojasKD",
-  "main": "gulpfile.babel.js",
+  "main": "sass/karin.sass",
   "authors": [
     "Fernando Moreira"
   ],
@@ -19,8 +19,7 @@
     "**/.*",
     "*.png",
     "yarn.lock",
-    "gulpfile.babel.js",
-    "gulpfile.babel.js",
+    "gulpfile.*",
     "package.json",
     "node_modules",
     "bower_components",
