@@ -13,7 +13,7 @@ const plumberHandler = {
   })
 };
 
-Gulp.task('stylesheets', () => Gulp.src([ `sass/**/*` ])
+Gulp.task('stylesheets', () => Gulp.src([ `sass/**/*.sass` ])
   .pipe($.plumber(plumberHandler))
   .pipe($.sass({
     compass: true,
@@ -56,7 +56,7 @@ Gulp.task('stylesheets', () => Gulp.src([ `sass/**/*` ])
   .pipe($.plumber.stop()));
 
 Gulp.task('watch', ['stylesheets'], () => {
-  Gulp.watch(`./sass/**/*`, ['stylesheets']);
+  Gulp.watch(`./sass/**/*.sass`, ['stylesheets']);
 });
 
 Gulp.task('default', [ 'watch' ]);
