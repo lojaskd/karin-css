@@ -5,7 +5,7 @@
 
 ---
 
-Leia mais na [documentação oficial](/) do Karin.
+Leia mais na [documentação oficial](https://github.com/LojasKD/karin/wiki) do Karin.
 
 ## Licença
 
