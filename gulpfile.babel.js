@@ -3,11 +3,8 @@
 import Gulp from 'gulp';
 import Plugins from 'gulp-load-plugins';
 import Bourbon from 'node-bourbon';
-import BrowserSync from 'browser-sync';
-import Fs from 'fs';
 
 const $ = Plugins();
-const BSync = BrowserSync.create();
 
 const plumberHandler = {
   errorHandler: $.notify.onError({
@@ -16,7 +13,7 @@ const plumberHandler = {
   })
 };
 
-Gulp.task('stylesheets', () => Gulp.src([ `sass/**/*.sass` ])
+Gulp.task('stylesheets', () => Gulp.src([ `sass/**/*` ])
   .pipe($.plumber(plumberHandler))
   .pipe($.sass({
     compass: true,
@@ -27,7 +24,7 @@ Gulp.task('stylesheets', () => Gulp.src([ `sass/**/*.sass` ])
     includePaths: [
       Bourbon.includePaths,
       `node_modules`,
-      `sass/bower`
+      `bower`
     ]
   }))
   .pipe($.autoprefixer({
@@ -50,33 +47,15 @@ Gulp.task('stylesheets', () => Gulp.src([ `sass/**/*.sass` ])
     indent_char: ' ',
   }))
   .pipe($.size({ title: 'Stylesheets!', gzip: false, showFiles: true }))
-  .pipe(Gulp.dest(`dist/stylesheets`))
+  .pipe(Gulp.dest(`dist`))
   .pipe($.rename({ suffix: '.min' }))
   .pipe($.cssnano())
   .pipe($.size({ title: 'Stylesheets minified!', gzip: false, showFiles: true }))
-  .pipe(Gulp.dest(`dist/stylesheets`))
+  .pipe(Gulp.dest(`dist`))
   .pipe($.plumber.stop()));
 
-Gulp.task('docs', () => Gulp.src([`docs/*.pug`])
-  .pipe($.plumber(plumberHandler))
-  .pipe($.data((file) => JSON.parse(
-    Fs.readFileSync('docs/config.json')
-  )))
-  .pipe($.pug({
-    locals: { production: $.util.env.prod ? true : false },
-    pretty: true
-  }))
-  .pipe(Gulp.dest(`dist/`))
-  .pipe($.plumber.stop()));
-
-Gulp.task('serve', ['stylesheets'], () => {
-  BSync.init({
-    server: './dist'
-  });
-  Gulp.watch(`./docs/**/*.{pug,json}`, ['docs']);
-  Gulp.watch(`./sass/**/*.sass`, ['stylesheets']);
-  Gulp.watch(`./dist/**/*`).on('change', BSync.reload);
+Gulp.task('watch', ['stylesheets'], () => {
+  Gulp.watch(`./sass/**/*`, ['stylesheets']);
 });
 
-Gulp.task('watch', [ 'serve' ]);
-Gulp.task('default', [ 'serve' ]);
+Gulp.task('default', [ 'watch' ]);

@@ -1,7 +1,7 @@
 {
   "name": "karin",
   "version": "1.0.0",
-  "description": "O kit de ferramentas CSS que dão beleza aos projeto da LojasKD",
+  "description": "O kit de ferramentas CSS que da beleza aos projeto da LojasKD",
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp serve",
@@ -20,17 +20,14 @@
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-preset-es2015": "^6.18.0",
-    "browser-sync": "^2.18.5",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-combine-mq": "^0.4.0",
     "gulp-cssnano": "^2.1.2",
-    "gulp-data": "^1.2.1",
     "gulp-jsbeautifier": "^2.0.3",
     "gulp-load-plugins": "^1.4.0",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-pug": "^3.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.0.0",
     "gulp-size": "^2.1.0",
