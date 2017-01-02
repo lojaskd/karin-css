@@ -16,7 +16,7 @@ const plumberHandler = {
   })
 };
 
-Gulp.task('stylesheets', () => Gulp.src([ `src/**/*.sass` ])
+Gulp.task('stylesheets', () => Gulp.src([ `sass/**/*.sass` ])
   .pipe($.plumber(plumberHandler))
   .pipe($.sass({
     compass: true,
@@ -27,8 +27,7 @@ Gulp.task('stylesheets', () => Gulp.src([ `src/**/*.sass` ])
     includePaths: [
       Bourbon.includePaths,
       `node_modules`,
-      `src/bower`,
-      `src/stylesheets`
+      `sass/bower`
     ]
   }))
   .pipe($.autoprefixer({
@@ -75,7 +74,7 @@ Gulp.task('serve', ['stylesheets'], () => {
     server: './dist'
   });
   Gulp.watch(`./docs/**/*.{pug,json}`, ['docs']);
-  Gulp.watch(`./src/**/*.sass`, ['stylesheets']);
+  Gulp.watch(`./sass/**/*.sass`, ['stylesheets']);
   Gulp.watch(`./dist/**/*`).on('change', BSync.reload);
 });
 

@@ -16,9 +16,15 @@
   "homepage": "https://github.com/nandomoreirame/karin",
   "ignore": [
     "**/.*",
+    "*.png",
+    "yarn.lock",
+    "gulpfile.babel.js",
+    "gulpfile.babel.js",
+    "package.json",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "docs"
   ]
 }
