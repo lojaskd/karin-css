@@ -23,6 +23,7 @@ Gulp.task('stylesheets', () => Gulp.src([ `sass/**/*` ])
     sourceComments: 'normal',
     includePaths: [
       Bourbon.includePaths,
+      `sass`,
       `node_modules`,
       `bower`
     ]
