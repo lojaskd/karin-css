@@ -5,6 +5,8 @@
 
 ---
 
+## Instalação e início rápido
+
 Leia mais na [documentação oficial](https://github.com/LojasKD/karin/wiki) do Karin.
 
 ## Licença
