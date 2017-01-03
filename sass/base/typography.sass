@@ -23,8 +23,7 @@ a
   color: $c-link
   text-decoration: none
 
-  &:hover,
-  &:focus
+  +hover-focus
     color: $c-link-hover
     text-decoration: underline
 
@@ -116,7 +115,7 @@ blockquote
   margin: 0 0 to-rem($spacing-base)
   transition: background-color .15s linear
 
-  &:hover
+  +hover
     background-color: rgba($c-silver, .4)
 
   *:last-child

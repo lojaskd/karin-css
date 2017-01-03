@@ -1,31 +1,16 @@
-/* line 5, sass/base/lists.sass */
-
-ul.lkd-list,
-ol.lkd-list {
+ul.lkd-list,ol.lkd-list {
   padding-left: 2.14286rem;
   margin-bottom: 1.07143rem;
 }
 
-
-/* line 10, sass/base/lists.sass */
-
-ul li ul,
-ul li ol,
-ol li ul,
-ol li ol {
+ul li ul,ul li ol,ol li ul,ol li ol {
   padding-left: 1.07143rem;
   margin-bottom: 0;
 }
 
-
-/* line 15, sass/base/lists.sass */
-
 ul {
   list-style: disc;
 }
-
-
-/* line 18, sass/base/lists.sass */
 
 ol {
   list-style: decimal;

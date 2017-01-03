@@ -1,5 +1,11 @@
 @import "karin-config"
 
+.u-hidden
+  display: none !important
+
+.u-show
+  display: block !important
+
 .u-pull-left
   float: left !important
 
@@ -7,16 +13,25 @@
   float: right !important
 
 .u-fw-light
-  font-weight: 300 !important
+  font-weight: $font-weight-light !important
 
 .u-fw-normal
-  font-weight: 400 !important
+  font-weight: $font-weight-normal !important
 
 .u-fw-bold
-  font-weight: 700 !important
+  font-weight: $font-weight-bold !important
 
 .u-highlight
   color: $c-base
   padding: 0 to-rem($spacing-xsmall)
   border-radius: $bd-radius-small
   background-color: $c-lkd-scale-1
+
+.u-ta-left
+  text-align: left !important
+
+.u-ta-right
+  text-align: right !important
+
+.u-ta-center
+  text-align: center !important

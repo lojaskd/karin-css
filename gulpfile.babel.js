@@ -19,8 +19,8 @@ Gulp.task('stylesheets', () => Gulp.src([ `sass/**/*.sass` ])
     compass: true,
     sourcemap: false,
     noCache: true,
-    style: 'expanded',
-    sourceComments: 'normal',
+    style: 'nested',
+    sourceComments: false,
     includePaths: [
       Bourbon.includePaths,
       `sass`,
@@ -43,10 +43,6 @@ Gulp.task('stylesheets', () => Gulp.src([ `sass/**/*.sass` ])
     cascade: false
   }))
   .pipe($.combineMq())
-  .pipe($.jsbeautifier({
-    indent_size: 2,
-    indent_char: ' ',
-  }))
   .pipe($.size({ title: 'Stylesheets!', gzip: false, showFiles: true }))
   .pipe(Gulp.dest(`dist`))
   .pipe($.rename({ suffix: '.min' }))

@@ -1,43 +1,46 @@
-/* line 3, sass/base/utils.sass */
+.u-hidden {
+  display: none !important;
+}
+
+.u-show {
+  display: block !important;
+}
 
 .u-pull-left {
   float: left !important;
 }
 
-
-/* line 6, sass/base/utils.sass */
-
 .u-pull-right {
   float: right !important;
 }
-
-
-/* line 9, sass/base/utils.sass */
 
 .u-fw-light {
   font-weight: 300 !important;
 }
 
-
-/* line 12, sass/base/utils.sass */
-
 .u-fw-normal {
   font-weight: 400 !important;
 }
 
-
-/* line 15, sass/base/utils.sass */
-
 .u-fw-bold {
   font-weight: 700 !important;
 }
-
-
-/* line 18, sass/base/utils.sass */
 
 .u-highlight {
   color: #545455;
   padding: 0 0.57143rem;
   border-radius: 2px;
   background-color: #ffef99;
+}
+
+.u-ta-left {
+  text-align: left !important;
+}
+
+.u-ta-right {
+  text-align: right !important;
+}
+
+.u-ta-center {
+  text-align: center !important;
 }

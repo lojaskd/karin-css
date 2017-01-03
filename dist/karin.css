@@ -1,88 +1,13 @@
-@import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+@charset "UTF-8";
 
-/* line 1, sass/base/reset.sass */
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,700");/**!
+ *
+ * Karin - https://github.com/LojasKD/karin
+ *
+ *
+ * Karin é uma estrutura SASS construída para fornecer estilos de base,
+ * componentes CSS e prototipagem estática rápida para a LojasKD.com.br
+ */html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -90,43 +15,17 @@ video {
   font: inherit;
 }
 
-
-/* line 20, sass/base/reset.sass */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   display: block;
 }
 
-
-/* line 24, sass/base/reset.sass */
-
-ul,
-ol {
+ul,ol {
   list-style: none;
 }
 
-
-/* line 28, sass/base/reset.sass */
-
-button,
-input,
-select,
-textarea {
+button,input,select,textarea {
   margin: 0;
 }
-
-
-/* line 34, sass/base/reset.sass */
 
 html {
   -webkit-box-sizing: initial;
@@ -135,12 +34,7 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-
-/* line 39, sass/base/reset.sass */
-
-*,
-*:before,
-*:after {
+*,*:before,*:after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
@@ -149,53 +43,29 @@ html {
   width: device-width;
 }
 
-
-/* line 46, sass/base/reset.sass */
-
-html,
-body {
+html,body {
   width: 100%;
   height: 100%;
 }
 
-
-/* line 51, sass/base/reset.sass */
-
-img,
-embed,
-object,
-audio,
-video {
+img,embed,object,audio,video {
   height: auto;
   max-width: 100%;
 }
 
-
-/* line 59, sass/base/reset.sass */
-
 iframe {
   border: 0;
 }
-
-
-/* line 62, sass/base/reset.sass */
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-
-/* line 66, sass/base/reset.sass */
-
-td,
-th {
+td,th {
   padding: 0;
   text-align: left;
 }
-
-
-/* line 3, sass/base/base.sass */
 
 hr {
   border: none;
@@ -203,43 +73,33 @@ hr {
   margin: 2.14286rem 0;
 }
 
+.u-hidden {
+  display: none !important;
+}
 
-/* line 3, sass/base/utils.sass */
+.u-show {
+  display: block !important;
+}
 
 .u-pull-left {
   float: left !important;
 }
 
-
-/* line 6, sass/base/utils.sass */
-
 .u-pull-right {
   float: right !important;
 }
-
-
-/* line 9, sass/base/utils.sass */
 
 .u-fw-light {
   font-weight: 300 !important;
 }
 
-
-/* line 12, sass/base/utils.sass */
-
 .u-fw-normal {
   font-weight: 400 !important;
 }
 
-
-/* line 15, sass/base/utils.sass */
-
 .u-fw-bold {
   font-weight: 700 !important;
 }
-
-
-/* line 18, sass/base/utils.sass */
 
 .u-highlight {
   color: #545455;
@@ -248,8 +108,17 @@ hr {
   background-color: #ffef99;
 }
 
+.u-ta-left {
+  text-align: left !important;
+}
 
-/* line 5, sass/base/typography.sass */
+.u-ta-right {
+  text-align: right !important;
+}
+
+.u-ta-center {
+  text-align: center !important;
+}
 
 html {
   font-size: 14px;
@@ -258,9 +127,6 @@ html {
   -moz-osx-font-smalloothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-
-
-/* line 12, sass/base/typography.sass */
 
 body {
   color: #545455;
@@ -275,123 +141,64 @@ body {
   letter-spacing: 0.02em;
 }
 
-
-/* line 22, sass/base/typography.sass */
-
 a {
   color: #2370b8;
   text-decoration: none;
 }
 
-
-/* line 26, sass/base/typography.sass */
-
-a:hover,
-a:focus {
+a:focus,a:hover {
   color: #1b568d;
   text-decoration: underline;
 }
 
-
-/* line 31, sass/base/typography.sass */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-b,
-strong {
+h1,h2,h3,h4,h5,h6,b,strong {
   font-weight: 700;
 }
 
-
-/* line 41, sass/base/typography.sass */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1,h2,h3,h4,h5,h6,p {
   margin: 0 0 1.07143rem;
 }
-
-
-/* line 50, sass/base/typography.sass */
 
 h1 {
   font-size: 2.28571rem;
 }
 
-
-/* line 53, sass/base/typography.sass */
-
 h2 {
   font-size: 2rem;
 }
-
-
-/* line 56, sass/base/typography.sass */
 
 h3 {
   font-size: 1.78571rem;
 }
 
-
-/* line 59, sass/base/typography.sass */
-
 h4 {
   font-size: 1.35714rem;
 }
-
-
-/* line 62, sass/base/typography.sass */
 
 h5 {
   font-size: 1.28571rem;
 }
 
-
-/* line 65, sass/base/typography.sass */
-
 h6 {
   font-size: 1rem;
 }
 
-
-/* line 68, sass/base/typography.sass */
-
 em {
   font-style: italic;
 }
-
-
-/* line 71, sass/base/typography.sass */
 
 small {
   font-size: 80%;
   color: #7d7f80;
 }
 
-
-/* line 75, sass/base/typography.sass */
-
 img {
   border: 0;
 }
 
-
-/* line 78, sass/base/typography.sass */
-
 big {
   font-size: 120%;
 }
-
-
-/* line 81, sass/base/typography.sass */
 
 abbr {
   border-bottom: 1px dashed #2370b8;
@@ -399,16 +206,9 @@ abbr {
   cursor: help;
 }
 
-
-/* line 86, sass/base/typography.sass */
-
-pre,
-code {
+pre,code {
   font-family: "Fira Code", Menlo, Monaco, "Courier New", Courier, monospace;
 }
-
-
-/* line 90, sass/base/typography.sass */
 
 code {
   border-radius: 2px;
@@ -416,9 +216,6 @@ code {
   background-color: #f2f2f2;
   padding: 0.28571rem 0.57143rem;
 }
-
-
-/* line 96, sass/base/typography.sass */
 
 pre {
   margin-top: 0;
@@ -429,9 +226,6 @@ pre {
   overflow: auto;
 }
 
-
-/* line 104, sass/base/typography.sass */
-
 pre code {
   color: inherit;
   font-size: inherit;
@@ -439,9 +233,6 @@ pre code {
   border-radius: 0;
   padding: 0;
 }
-
-
-/* line 111, sass/base/typography.sass */
 
 blockquote {
   padding: 1.07143rem;
@@ -453,56 +244,31 @@ blockquote {
   transition: background-color .15s linear;
 }
 
-
-/* line 119, sass/base/typography.sass */
-
 blockquote:hover {
   background-color: rgba(242, 242, 242, 0.4);
 }
-
-
-/* line 122, sass/base/typography.sass */
 
 blockquote *:last-child {
   margin-bottom: 0;
 }
 
-
-/* line 5, sass/base/lists.sass */
-
-ul.lkd-list,
-ol.lkd-list {
+ul.lkd-list,ol.lkd-list {
   padding-left: 2.14286rem;
   margin-bottom: 1.07143rem;
 }
 
-
-/* line 10, sass/base/lists.sass */
-
-ul li ul,
-ul li ol,
-ol li ul,
-ol li ol {
+ul li ul,ul li ol,ol li ul,ol li ol {
   padding-left: 1.07143rem;
   margin-bottom: 0;
 }
-
-
-/* line 15, sass/base/lists.sass */
 
 ul {
   list-style: disc;
 }
 
-
-/* line 18, sass/base/lists.sass */
-
 ol {
   list-style: decimal;
 }
-
-
-/* line 4, sass/base/accessibility.sass */
 
 .lkd-visually-hidden {
   position: absolute !important;
@@ -515,26 +281,15 @@ ol {
   overflow: hidden !important;
 }
 
-
-/* line 15, sass/base/accessibility.sass */
-
-.lkd-focusable:focus,
-.lkd-focusable.is-focused {
+.lkd-focusable:focus,.lkd-focusable.is-focused {
   -webkit-box-shadow: 0 0 0 2px color(blue, medium, 0.7);
   box-shadow: 0 0 0 2px color(blue, medium, 0.7);
   outline: none;
 }
 
-
-/* line 21, sass/base/accessibility.sass */
-
-.lkd-focusable-inline:focus,
-.lkd-focusable-inline.is-focused {
+.lkd-focusable-inline:focus,.lkd-focusable-inline.is-focused {
   text-decoration: underline;
 }
-
-
-/* line 25, sass/base/accessibility.sass */
 
 .lkd-accessibility-aid {
   position: absolute;
@@ -545,9 +300,6 @@ ol {
   z-index: -1;
   clip: rect(1px, 1px, 1px, 1px);
 }
-
-
-/* line 34, sass/base/accessibility.sass */
 
 .lkd-accessibility-aid:focus {
   top: 0;
@@ -563,26 +315,7 @@ ol {
   background: #f2f2f2;
 }
 
-
-/* line 3, sass/base/forms.sass */
-
-input[type="color"],
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"],
-input:not([type]),
-textarea,
-select {
+input[type="color"],input[type="date"],input[type="datetime"],input[type="datetime-local"],input[type="email"],input[type="month"],input[type="number"],input[type="password"],input[type="search"],input[type="tel"],input[type="text"],input[type="time"],input[type="url"],input[type="week"],input:not([type]),textarea,select {
   display: inline-block;
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
@@ -604,56 +337,15 @@ select {
   letter-spacing: 0.02em;
 }
 
-
-/* line 19, sass/base/forms.sass */
-
-input[type="color"]:disabled,
-input[type="date"]:disabled,
-input[type="datetime"]:disabled,
-input[type="datetime-local"]:disabled,
-input[type="email"]:disabled,
-input[type="month"]:disabled,
-input[type="number"]:disabled,
-input[type="password"]:disabled,
-input[type="search"]:disabled,
-input[type="tel"]:disabled,
-input[type="text"]:disabled,
-input[type="time"]:disabled,
-input[type="url"]:disabled,
-input[type="week"]:disabled,
-input:not([type]):disabled,
-textarea:disabled,
-select:disabled {
+input[type="color"]:disabled,input[type="date"]:disabled,input[type="datetime"]:disabled,input[type="datetime-local"]:disabled,input[type="email"]:disabled,input[type="month"]:disabled,input[type="number"]:disabled,input[type="password"]:disabled,input[type="search"]:disabled,input[type="tel"]:disabled,input[type="text"]:disabled,input[type="time"]:disabled,input[type="url"]:disabled,input[type="week"]:disabled,input:not([type]):disabled,textarea:disabled,select:disabled {
   cursor: not-allowed;
   background-color: #eee;
   opacity: 1;
 }
 
-
-/* line 24, sass/base/forms.sass */
-
-input[type="color"]:focus,
-input[type="date"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="email"]:focus,
-input[type="month"]:focus,
-input[type="number"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="text"]:focus,
-input[type="time"]:focus,
-input[type="url"]:focus,
-input[type="week"]:focus,
-input:not([type]):focus,
-textarea:focus,
-select:focus {
+input[type="color"]:focus,input[type="date"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="email"]:focus,input[type="month"]:focus,input[type="number"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="text"]:focus,input[type="time"]:focus,input[type="url"]:focus,input[type="week"]:focus,input:not([type]):focus,textarea:focus,select:focus {
   border-color: #ffe01a;
 }
-
-
-/* line 27, sass/base/forms.sass */
 
 label {
   cursor: pointer;
@@ -661,15 +353,9 @@ label {
   display: inline-block;
 }
 
-
-/* line 32, sass/base/forms.sass */
-
 select {
   line-height: 20px;
 }
-
-
-/* line 35, sass/base/forms.sass */
 
 textarea {
   overflow-y: auto;

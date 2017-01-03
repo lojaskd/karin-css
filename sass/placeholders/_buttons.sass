@@ -27,14 +27,12 @@
 
   +appearance(none)
 
-  &[disabled],
-  &[disabled]:hover,
-  &[disabled]:focus
-    cursor: not-allowed
-    box-shadow: none
-    opacity: .65
+  &[disabled]
+    +plain-hover-focus
+      cursor: not-allowed
+      box-shadow: none
+      opacity: .65
 
-  &:hover,
-  &:focus
+  +hover-focus
     text-decoration: none
     outline: none

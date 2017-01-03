@@ -1,7 +1,5 @@
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,700");
 
-/* line 5, sass/base/typography.sass */
-
 html {
   font-size: 14px;
   font-smallooth: always;
@@ -9,9 +7,6 @@ html {
   -moz-osx-font-smalloothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-
-
-/* line 12, sass/base/typography.sass */
 
 body {
   color: #545455;
@@ -26,123 +21,64 @@ body {
   letter-spacing: 0.02em;
 }
 
-
-/* line 22, sass/base/typography.sass */
-
 a {
   color: #2370b8;
   text-decoration: none;
 }
 
-
-/* line 26, sass/base/typography.sass */
-
-a:hover,
-a:focus {
+a:focus,a:hover {
   color: #1b568d;
   text-decoration: underline;
 }
 
-
-/* line 31, sass/base/typography.sass */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-b,
-strong {
+h1,h2,h3,h4,h5,h6,b,strong {
   font-weight: 700;
 }
 
-
-/* line 41, sass/base/typography.sass */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1,h2,h3,h4,h5,h6,p {
   margin: 0 0 1.07143rem;
 }
-
-
-/* line 50, sass/base/typography.sass */
 
 h1 {
   font-size: 2.28571rem;
 }
 
-
-/* line 53, sass/base/typography.sass */
-
 h2 {
   font-size: 2rem;
 }
-
-
-/* line 56, sass/base/typography.sass */
 
 h3 {
   font-size: 1.78571rem;
 }
 
-
-/* line 59, sass/base/typography.sass */
-
 h4 {
   font-size: 1.35714rem;
 }
-
-
-/* line 62, sass/base/typography.sass */
 
 h5 {
   font-size: 1.28571rem;
 }
 
-
-/* line 65, sass/base/typography.sass */
-
 h6 {
   font-size: 1rem;
 }
 
-
-/* line 68, sass/base/typography.sass */
-
 em {
   font-style: italic;
 }
-
-
-/* line 71, sass/base/typography.sass */
 
 small {
   font-size: 80%;
   color: #7d7f80;
 }
 
-
-/* line 75, sass/base/typography.sass */
-
 img {
   border: 0;
 }
 
-
-/* line 78, sass/base/typography.sass */
-
 big {
   font-size: 120%;
 }
-
-
-/* line 81, sass/base/typography.sass */
 
 abbr {
   border-bottom: 1px dashed #2370b8;
@@ -150,16 +86,9 @@ abbr {
   cursor: help;
 }
 
-
-/* line 86, sass/base/typography.sass */
-
-pre,
-code {
+pre,code {
   font-family: "Fira Code", Menlo, Monaco, "Courier New", Courier, monospace;
 }
-
-
-/* line 90, sass/base/typography.sass */
 
 code {
   border-radius: 2px;
@@ -167,9 +96,6 @@ code {
   background-color: #f2f2f2;
   padding: 0.28571rem 0.57143rem;
 }
-
-
-/* line 96, sass/base/typography.sass */
 
 pre {
   margin-top: 0;
@@ -180,9 +106,6 @@ pre {
   overflow: auto;
 }
 
-
-/* line 104, sass/base/typography.sass */
-
 pre code {
   color: inherit;
   font-size: inherit;
@@ -190,9 +113,6 @@ pre code {
   border-radius: 0;
   padding: 0;
 }
-
-
-/* line 111, sass/base/typography.sass */
 
 blockquote {
   padding: 1.07143rem;
@@ -204,15 +124,9 @@ blockquote {
   transition: background-color .15s linear;
 }
 
-
-/* line 119, sass/base/typography.sass */
-
 blockquote:hover {
   background-color: rgba(242, 242, 242, 0.4);
 }
-
-
-/* line 122, sass/base/typography.sass */
 
 blockquote *:last-child {
   margin-bottom: 0;
