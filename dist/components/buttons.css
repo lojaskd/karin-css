@@ -1,4 +1,11 @@
+/**
+ * karin - O kit de ferramentas CSS que da beleza aos projetos da LojasKD
+ * @version v0.0.7
+ * @license MIT
+ * @copyright 2016 Fernando Moreira.
+ * @link https://github.com/lojaskd/karin
+ */
 button,input[type="button"],input[type="reset"],input[type="submit"] {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Roboto", "Ubuntu", Arial, Helvetica, sans-serif;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Ubuntu", Arial, Helvetica, sans-serif;
   letter-spacing: 0.02em;
 }

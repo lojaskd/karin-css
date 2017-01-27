@@ -1,3 +1,10 @@
+/**
+ * karin - O kit de ferramentas CSS que da beleza aos projetos da LojasKD
+ * @version v0.0.7
+ * @license MIT
+ * @copyright 2016 Fernando Moreira.
+ * @link https://github.com/lojaskd/karin
+ */
 .lkd-visually-hidden {
   position: absolute !important;
   border: 0 !important;

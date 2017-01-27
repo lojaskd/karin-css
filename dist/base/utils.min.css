@@ -1,1 +1,8 @@
+/**
+ * karin - O kit de ferramentas CSS que da beleza aos projetos da LojasKD
+ * @version v0.0.7
+ * @license MIT
+ * @copyright 2016 Fernando Moreira.
+ * @link https://github.com/lojaskd/karin
+ */
 .u-hidden{display:none!important}.u-show{display:block!important}.u-pull-left{float:left!important}.u-pull-right{float:right!important}.u-fw-light{font-weight:300!important}.u-fw-normal{font-weight:400!important}.u-fw-bold{font-weight:700!important}.u-highlight{color:#545455;padding:0 .57143rem;border-radius:2px;background-color:#ffef99}.u-ta-left{text-align:left!important}.u-ta-right{text-align:right!important}.u-ta-center{text-align:center!important}

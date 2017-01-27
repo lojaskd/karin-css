@@ -1,13 +1,13 @@
-@charset "UTF-8";
+/**
+ * karin - O kit de ferramentas CSS que da beleza aos projetos da LojasKD
+ * @version v0.0.7
+ * @license MIT
+ * @copyright 2016 Fernando Moreira.
+ * @link https://github.com/lojaskd/karin
+ */
+@import url("//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i");
 
-@import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,700");/**!
- *
- * Karin - https://github.com/LojasKD/karin
- *
- *
- * Karin é uma estrutura SASS construída para fornecer estilos de base,
- * componentes CSS e prototipagem estática rápida para a LojasKD.com.br
- */html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -131,7 +131,7 @@ html {
 body {
   color: #545455;
   font-size: 0.8571rem;
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Roboto", "Ubuntu", Arial, Helvetica, sans-serif;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Ubuntu", Arial, Helvetica, sans-serif;
   font-weight: 400;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
@@ -139,6 +139,10 @@ body {
   -moz-font-feature-settings: "calt" 1;
   font-feature-settings: "calt" 1;
   letter-spacing: 0.02em;
+}
+
+p {
+  margin: 0 0 1.07143rem;
 }
 
 a {
@@ -151,12 +155,14 @@ a:focus,a:hover {
   text-decoration: underline;
 }
 
-h1,h2,h3,h4,h5,h6,b,strong {
+b,strong {
   font-weight: 700;
 }
 
-h1,h2,h3,h4,h5,h6,p {
-  margin: 0 0 1.07143rem;
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Ubuntu", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin: 1.07143rem 0;
 }
 
 h1 {
@@ -322,7 +328,7 @@ input[type="color"],input[type="date"],input[type="datetime"],input[type="dateti
   border-radius: 3px;
   line-height: 28px;
   padding: 0 6px;
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Roboto", "Ubuntu", Arial, Helvetica, sans-serif;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Ubuntu", Arial, Helvetica, sans-serif;
   background-color: #fff;
   color: #52443c;
   border: 1px solid #c1c1b6;

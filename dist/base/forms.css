@@ -1,3 +1,10 @@
+/**
+ * karin - O kit de ferramentas CSS que da beleza aos projetos da LojasKD
+ * @version v0.0.7
+ * @license MIT
+ * @copyright 2016 Fernando Moreira.
+ * @link https://github.com/lojaskd/karin
+ */
 input[type="color"],input[type="date"],input[type="datetime"],input[type="datetime-local"],input[type="email"],input[type="month"],input[type="number"],input[type="password"],input[type="search"],input[type="tel"],input[type="text"],input[type="time"],input[type="url"],input[type="week"],input:not([type]),textarea,select {
   display: inline-block;
   -webkit-box-sizing: inherit;
@@ -5,7 +12,7 @@ input[type="color"],input[type="date"],input[type="datetime"],input[type="dateti
   border-radius: 3px;
   line-height: 28px;
   padding: 0 6px;
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Roboto", "Ubuntu", Arial, Helvetica, sans-serif;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Ubuntu", Arial, Helvetica, sans-serif;
   background-color: #fff;
   color: #52443c;
   border: 1px solid #c1c1b6;

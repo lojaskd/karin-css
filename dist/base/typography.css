@@ -1,4 +1,11 @@
-@import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+/**
+ * karin - O kit de ferramentas CSS que da beleza aos projetos da LojasKD
+ * @version v0.0.7
+ * @license MIT
+ * @copyright 2016 Fernando Moreira.
+ * @link https://github.com/lojaskd/karin
+ */
+@import url("//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i");
 
 html {
   font-size: 14px;
@@ -11,7 +18,7 @@ html {
 body {
   color: #545455;
   font-size: 0.8571rem;
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Roboto", "Ubuntu", Arial, Helvetica, sans-serif;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Ubuntu", Arial, Helvetica, sans-serif;
   font-weight: 400;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
@@ -19,6 +26,10 @@ body {
   -moz-font-feature-settings: "calt" 1;
   font-feature-settings: "calt" 1;
   letter-spacing: 0.02em;
+}
+
+p {
+  margin: 0 0 1.07143rem;
 }
 
 a {
@@ -31,12 +42,14 @@ a:focus,a:hover {
   text-decoration: underline;
 }
 
-h1,h2,h3,h4,h5,h6,b,strong {
+b,strong {
   font-weight: 700;
 }
 
-h1,h2,h3,h4,h5,h6,p {
-  margin: 0 0 1.07143rem;
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Ubuntu", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin: 1.07143rem 0;
 }
 
 h1 {
