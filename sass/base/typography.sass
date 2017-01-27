@@ -1,6 +1,10 @@
 @import "karin-config"
 
-@import url('//fonts.googleapis.com/css?family=Open+Sans:300,400,700')
+// @import url('//fonts.googleapis.com/css?family=Open+Sans:300,400,700')
+@import url('//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');
+// @import url('//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i')
+// @import url('//fonts.googleapis.com/css?family=Raleway:300,400,700,800')
+// @import url('//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700,700i');
 
 html
   font-size: $size-unit-px
@@ -19,6 +23,9 @@ body
   font-feature-settings: "calt" 1
   letter-spacing: $letter-spacing-base
 
+p
+  margin: 0 0 to-rem($spacing-small)
+
 a
   color: $c-link
   text-decoration: none
@@ -27,12 +34,6 @@ a
     color: $c-link-hover
     text-decoration: underline
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 b,
 strong
   font-weight: $font-weight-bold
@@ -42,9 +43,10 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p
-  margin: 0 0 to-rem($spacing-small)
+h6
+  font-family: $font-family-heading
+  font-weight: $font-weight-bold
+  margin: to-rem($spacing-small) 0
 
 h1
   font-size: to-rem($font-size-h1)
