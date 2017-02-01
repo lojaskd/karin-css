@@ -1,8 +1,0 @@
-/**
- * karin - O kit de ferramentas CSS que da beleza aos projetos da LojasKD
- * @version v0.0.7
- * @license MIT
- * @copyright 2016 Fernando Moreira.
- * @link https://github.com/lojaskd/karin
- */
-.lkd-visually-hidden{position:absolute!important;border:0!important;clip:rect(0,0,0,0)!important;width:1px!important;height:1px!important;margin:-1px!important;padding:0!important;overflow:hidden!important}.lkd-focusable.is-focused,.lkd-focusable:focus{box-shadow:0 0 0 2px color(blue,medium,.7);outline:none}.lkd-focusable-inline.is-focused,.lkd-focusable-inline:focus{text-decoration:underline}.lkd-accessibility-aid{position:absolute;width:1px;height:1px;margin:0;overflow:hidden;z-index:-1;clip:rect(1px,1px,1px,1px)}.lkd-accessibility-aid:focus{top:0;z-index:10000;width:auto;height:auto;padding:0 20px;clip:auto;font-weight:700;line-height:50px;color:#545455;text-decoration:none;background:#f2f2f2}
