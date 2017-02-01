@@ -23,8 +23,12 @@
     "package.json",
     "node_modules",
     "bower_components",
+    "bower",
     "test",
     "tests",
     "docs"
-  ]
+  ],
+  "dependencies": {
+    "material-design-icons": "^3.0.1"
+  }
 }
