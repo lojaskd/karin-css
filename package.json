@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lojaskd/karin.git"
+    "url": "git+https://github.com/lojaskd/karin-css.git"
   },
   "author": "Fernando Moreira",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lojaskd/karin/issues"
+    "url": "https://github.com/lojaskd/karin-css/issues"
   },
-  "homepage": "https://github.com/lojaskd/karin#readme",
+  "homepage": "https://github.com/lojaskd/karin-css#readme",
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-preset-es2015": "^6.18.0",
