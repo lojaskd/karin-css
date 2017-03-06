@@ -1,3 +1,4 @@
+  <img src="/karin-css.png" />
 # Bem-vindo ao Karin
 
 ## Descrição do Projeto
