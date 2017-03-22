@@ -1,5 +1,5 @@
 {
-  "name": "karin",
+  "name": "karin-css",
   "version": "0.0.10",
   "description": "O kit de ferramentas CSS que da beleza aos projetos da LojasKD",
   "main": "sass/karin.sass",
@@ -14,7 +14,7 @@
     "stylesheet",
     "ui"
   ],
-  "homepage": "https://github.com/lojaskd/karin",
+  "homepage": "https://github.com/lojaskd/karin-css",
   "ignore": [
     "**/.*",
     "*.png",

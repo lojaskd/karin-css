@@ -1,3 +1,4 @@
+
 # Bem-vindo ao Karin
 
 ## Descrição do Projeto
@@ -7,7 +8,7 @@
 
 ## Instalação e início rápido
 
-Informações de como instalar e usar o Karin na [Wiki Oficial](https://github.com/LojasKD/karin/wiki)
+Informações de como instalar e usar o Karin na [Wiki Oficial](https://github.com/LojasKD/karin-css/wiki)
 
 ## Copyright e Licença
 
