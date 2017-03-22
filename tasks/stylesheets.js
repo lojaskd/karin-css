@@ -1,18 +1,18 @@
-'use strict';
+'use strict'
 
-import Gulp from 'gulp';
-import Plugins from 'gulp-load-plugins';
-import Bourbon from 'node-bourbon';
-import pkg from '../package.json';
+import Gulp from 'gulp'
+import Plugins from 'gulp-load-plugins'
+import Bourbon from 'node-bourbon'
+import pkg from '../package.json'
 
-const $ = Plugins();
+const $ = Plugins()
 
 const plumberHandler = {
   errorHandler: $.notify.onError({
-    title   : 'Gulp',
-    message : 'Error: <%= error.message %>'
+    title: 'Gulp',
+    message: 'Error: <%= error.message %>'
   })
-};
+}
 
 const banner = ['/**',
   ' * <%= pkg.name %> - <%= pkg.description %>',
@@ -21,7 +21,7 @@ const banner = ['/**',
   ' * @copyright 2016 <%= pkg.author %>.',
   ' * @link https://github.com/lojaskd/karin',
   ' */',
-  ''].join('\n');
+  ''].join('\n')
 
 Gulp.task('stylesheets', () => Gulp.src([ `sass/**/*.sass` ])
   .pipe($.plumber(plumberHandler))
@@ -61,4 +61,4 @@ Gulp.task('stylesheets', () => Gulp.src([ `sass/**/*.sass` ])
   .pipe($.size({ title: 'Stylesheets minified!', gzip: false, showFiles: true }))
   .pipe($.header(banner, { pkg }))
   .pipe(Gulp.dest(`dist/stylesheets`))
-  .pipe($.plumber.stop()));
+  .pipe($.plumber.stop()))

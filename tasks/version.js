@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 /**
  * Bumping version number and tagging the repository with it.
@@ -14,12 +14,12 @@
  * introduced a feature or made a backwards-incompatible release.
  */
 
-import Gulp from 'gulp';
-import Plugins from 'gulp-load-plugins';
+import Gulp from 'gulp'
+import Plugins from 'gulp-load-plugins'
 
-const $ = Plugins();
+const $ = Plugins()
 
-function version(importance) {
+function version (importance) {
   // get all the files to bump version in
   return Gulp.src(['./package.json', './bower.json'])
     // bump the version number in those files
@@ -31,9 +31,9 @@ function version(importance) {
     // read only one file to get the version number
     .pipe($.filter('package.json'))
     // **tag it in the repository**
-    .pipe($.tagVersion());
+    .pipe($.tagVersion())
 }
 
-Gulp.task('version:patch', () => version('patch'));
-Gulp.task('version:feature', () => version('minor'));
-Gulp.task('version:release', () => version('major'));
+Gulp.task('version:patch', () => version('patch'))
+Gulp.task('version:feature', () => version('minor'))
+Gulp.task('version:release', () => version('major'))
