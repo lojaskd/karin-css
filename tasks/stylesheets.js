@@ -1,15 +1,15 @@
 'use strict'
 
-import Gulp from 'gulp'
-import Plugins from 'gulp-load-plugins'
-import Bourbon from 'node-bourbon'
+import gulp from 'gulp'
+import plugins from 'gulp-load-plugins'
+import bourbon from 'node-bourbon'
 import pkg from '../package.json'
 
-const $ = Plugins()
+const $ = plugins()
 
 const plumberHandler = {
   errorHandler: $.notify.onError({
-    title: 'Gulp',
+    title: 'gulp',
     message: 'Error: <%= error.message %>'
   })
 }
@@ -23,7 +23,7 @@ const banner = ['/**',
   ' */',
   ''].join('\n')
 
-Gulp.task('stylesheets', () => Gulp.src([ `sass/**/*.sass` ])
+gulp.task('stylesheets', () => gulp.src([ `sass/**/*.sass` ])
   .pipe($.plumber(plumberHandler))
   .pipe($.sass({
     compass: true,
@@ -32,7 +32,7 @@ Gulp.task('stylesheets', () => Gulp.src([ `sass/**/*.sass` ])
     style: 'nested',
     sourceComments: false,
     includePaths: [
-      Bourbon.includePaths,
+      bourbon.includePaths,
       `sass`,
       `node_modules`,
       `bower`
@@ -55,10 +55,10 @@ Gulp.task('stylesheets', () => Gulp.src([ `sass/**/*.sass` ])
   .pipe($.combineMq())
   .pipe($.size({ title: 'Stylesheets!', gzip: false, showFiles: true }))
   .pipe($.header(banner, { pkg }))
-  .pipe(Gulp.dest(`dist/stylesheets`))
+  .pipe(gulp.dest(`dist/stylesheets`))
   .pipe($.rename({ suffix: '.min' }))
   .pipe($.cssnano())
   .pipe($.size({ title: 'Stylesheets minified!', gzip: false, showFiles: true }))
   .pipe($.header(banner, { pkg }))
-  .pipe(Gulp.dest(`dist/stylesheets`))
+  .pipe(gulp.dest(`dist/stylesheets`))
   .pipe($.plumber.stop()))
