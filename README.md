@@ -1,5 +1,7 @@
 
-# Bem-vindo ao Karin
+# Bem-vindo ao Karin 
+
+[![Code Climate](https://codeclimate.com/github/lojaskd/karin-css/badges/gpa.svg)](https://codeclimate.com/github/lojaskd/karin-css)
 
 ## Descrição do Projeto
 
