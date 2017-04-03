@@ -27,7 +27,7 @@ function _version (importance) {
   return gulp.src([`${basePath}package.json`, `${basePath}bower.json`])
     .pipe($.bump({ type: importance })) // bump the version number in those files
     .pipe(gulp.dest(`${basePath}`)) // save it back to filesystem
-    .pipe($.git.commit('Alterando versão e criando uma tag')) // commit the changed version number
+    .pipe($.git.commit('Bumps package version')) // commit the changed version number
     .pipe($.filter(`${basePath}package.json`)) // read only one file to get the version number
     .pipe($.tagVersion()) // **tag it in the repository**
 }
