@@ -1,37 +1,81 @@
-///*------------------------------------*\
-//          NEWS KARIN VARIABLES
-///*------------------------------------*/
+///*------------------------------------------------------*\
+// KARIN VARIABLES
+///*------------------------------------------------------*/
 
 /**
  * STYLE GUIDE VARIABLES ------------------ Declarations of Sass variables
+ * -----GENERAL
+ * -----PATHS
  * -----TYPOGRAPHY
  * -----COLORS
  * -----SHADOWS
  * -----SPACINGS
+ * -----SIZES
+ * -----BORDERS
+ * -----ANIMATIONS
+ * -----GRID
+ *
+ * COMPONENTS
+ * -----BUTTONS
+ * -----TEXT FIELDS
+ * -----CHECKBOX
  */
+
+// ==========  GENERAL  ========== //
+
+$default-feature: min-width
+$cursor-disabled: not-allowed
 
 // ==========  TYPOGRAPHY  ========== //
 
-$font-family: 'Lato', Helvetica, sans-serif
+$font-family-system: -apple-system, BlinkMacSystemFont, 'Ubuntu', Arial, Helvetica, sans-serif
+$font-family: 'Lato', $font-family-system
+
+$font-family-heading: $font-family
+$font-family-serif: Georgia, "Times New Roman", Times, serif
+$font-family-monospace: 'Fira Code', Menlo, Monaco, 'Courier New', Courier, monospace
+
+$font-family-shelby-regular: 'shelby-regular', $font-family
+$font-family-shelby-bold: 'shelby-bold', $font-family
 
 $font-size-base-px: 14px
 $font-size-small-px: 12px
+
+$font-size-xlarge: 1.286rem
+$font-size-large: 1.143rem
+$font-size-base: 1rem
+$font-size-small: .8571rem
+$font-size-xsmall: .7143rem
+
+$letter-spacing: .02em
 
 $font-size-heading-1: 24px
 $font-size-heading-2: 18px
 $font-size-heading-3: 16px
 
-$line-height-base: 1.5em
-
 $font-weight-light: 300
-$font-weight-regular: 400
+$font-weight-normal: 400
 $font-weight-bold: 700
 
-// ==========  COLORS  ========== //
+$line-height-xsmall: 1
+$line-height-small: 1.3
+$line-height-base: 1.5
+$line-height-large: 1.8
+$line-height-xlarge: 2
 
-$white: #fff
-$black: #000
-$text: #424242
+$font-size-h1: $font-size-base-px * 2.25
+$font-size-h2: $font-size-base-px * 2
+$font-size-h3: $font-size-base-px * 1.75
+$font-size-h4: $font-size-base-px * 1.375
+$font-size-h5: $font-size-base-px * 1.25
+$font-size-h6: $font-size-base-px
+
+// ==========  PATHS  ========== //
+
+$images-path : "/dist/images"
+$fonts-path  : "/dist/fonts"
+
+// ==========  COLORS  ========== //
 
 // Gray pallete
 $gray-lighten-2: #ebebeb
@@ -67,11 +111,21 @@ $red-lighten: #ef5350
 $red: #e53935
 $red-darken: #d32f2f
 
+// base pallete
+$white: #fff
+$black: #000
+$text: #424242
+$background: #fff
+$link: $blue-lighten-1
+$link-hover: $blue-lighten-2
+$link-focus: $blue-darken-1
+
 // status pallete
+$primary: $blue
 $success: $green
 $warning: $orange
 $info: $blue-lighten-1
-$error: $red
+$danger: $red
 
 // ==========  SHADOWS  ========== //
 
@@ -81,22 +135,93 @@ $z-3: 0 6px 12px rgba($black, .09), 0 12px 24px rgba($black, .2)
 
 // ==========  SPACINGS  ========== //
 
-$spacing-xsmall : 10px
-$spacing-small  : 15px
-$spacing        : 20px
-$spacing-medium : 30px
-$spacing-large  : 40px
-$spacing-xlarge : 60px
+$spacing-xsmall: 10px
+$spacing-small: 15px
+$spacing: 20px
+$spacing-medium: 30px
+$spacing-large: 40px
+$spacing-xlarge: 60px
+
+// ==========  SIZES  ========== //
+
+$height-xsmall: 10px
+$height-small: 15px
+$height-base: 30px
+$height-large: 40px
+$height-xlarge: 60px
 
 // ==========  BORDERS  ========== //
 
 $border-radius-small: 2px
 $border-radius-base: 3px
 $border-radius-large: 4px
+$border-radius-xlarge: 6px
+
+$border-color: $gray
+$border: 1px solid $border-color
 
 // ==========  ANIMATIONS  ========== //
+
 $animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1) !default;
 $animation-curve-linear-out-slow-in: cubic-bezier(0, 0, 0.2, 1) !default;
 $animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1) !default;
 
 $animation-curve-default: $animation-curve-fast-out-slow-in !default;
+
+// ==========  GRID  ========== //
+
+$enable-flex: true
+$max-width-container : 64rem // ~1024px
+$array-directions: ( "", "top", "right", "bottom", "left" )
+$array-spacings: ( xsmall: $spacing-xsmall, small: $spacing-small, base: $spacing, large: $spacing-large, xlarge: $spacing-xlarge )
+
+
+
+
+///*------------------------------------------------------*\
+// COMPONENTS
+///*------------------------------------------------------*/
+
+// ==========  BUTTONS  ========== //
+
+$button-spacing: 0 1.2em
+$button-bd-radius: $border-radius-base
+$button-font-size: $font-size-base
+
+$button-bd-radius-xsmall: $border-radius-small
+$button-font-size-xsmall: 12px
+
+$button-bd-radius-small: $border-radius-small
+$button-font-size-small: 12px
+
+$button-bd-radius-large: $border-radius-large
+$button-font-size-large: 16px
+
+$button-bg-default: $gray
+$button-default: $text
+$button-bg-default-hover: darken($button-bg-default, 2%)
+
+$button-bg-yellow: $yellow-darken
+$button-yellow: $text
+$button-bg-yellow-hover: darken($button-bg-yellow, 2%)
+
+$button-bg-primary: mix($white, $primary, 20%)
+$button-primary: $white
+$button-bg-primary-hover: darken($button-bg-primary, 5%)
+
+$button-bg-white: $white
+$button-white: $text
+$button-bg-white-hover: darken($button-bg-white, 5%)
+
+// ==========  TEXT FIELDS  ========== //
+
+$input-bg: $white
+$input-color: $text
+$input-box-shadow-focus: $info
+$input-border: $gray
+$input-border-focus: $primary
+$input-bg-disabled: $gray-lighten-2
+
+// ==========  CHECKBOX  ========== //
+
+$checkbox-size: $height-small

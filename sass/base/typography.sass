@@ -1,33 +1,33 @@
-@import "karin-config"
+@import "../karin-config"
 
 @import url('//fonts.googleapis.com/css?family=Lato:300,400,700');
 
 html
-  font-size: $size-unit-px
+  font-size: $font-size-base-px
   font-smallooth: always
   -webkit-font-smalloothing: antialiased
   -moz-osx-font-smalloothing: grayscale
   text-rendering: optimizeLegibility
 
 body
-  color: $c-base
+  color: $text
   font-size: $font-size-small
-  font-family: $font-family-base
+  font-family: $font-family
   font-weight: $font-weight-normal
   line-height: $line-height-base
   text-rendering: optimizeLegibility
   font-feature-settings: "calt" 1
-  letter-spacing: $letter-spacing-base
+  letter-spacing: $letter-spacing
 
 p
   margin: 0 0 to-rem($spacing-small)
 
 a
-  color: $c-link
+  color: $link
   text-decoration: none
 
   +hover-focus
-    color: $c-link-hover
+    color: $link-hover
     text-decoration: underline
 
 b,
@@ -67,7 +67,7 @@ em
 
 small
   font-size: 80%
-  color: $c-gray-scale-5
+  color: $gray-darken-1
 
 img
   border: 0
@@ -76,8 +76,8 @@ big
   font-size: 120%
 
 abbr
-  border-bottom: 1px dashed $c-link
-  background-color: $c-silver
+  border-bottom: 1px dashed $link
+  background-color: $gray-lighten-2
   cursor: help
 
 pre,
@@ -86,14 +86,14 @@ code
 
 code
   border-radius: 2px
-  color: $c-gray-scale-6
-  background-color: $c-silver
+  color: $gray-darken-2
+  background-color: $gray-lighten-2
   padding: to-rem($spacing-xsmall / 2) to-rem($spacing-xsmall)
 
 pre
   margin-top: 0
   margin-bottom: 1rem
-  background-color: $c-silver
+  background-color: $gray-lighten-2
   font-size: $font-size-small
   padding: to-rem($spacing-small)
   overflow: auto
@@ -108,13 +108,13 @@ pre
 blockquote
   padding: to-rem($spacing-small)
   text-align: center
-  font-size: to-rem($size-unit-px * 1.4) // ~20px
-  background-color: rgba($c-silver, .8)
-  margin: 0 0 to-rem($spacing-base)
+  font-size: to-rem($font-size-base-px * 1.4) // ~20px
+  background-color: rgba($gray-lighten-2, .8)
+  margin: 0 0 to-rem($spacing)
   transition: background-color .15s linear
 
   +hover
-    background-color: rgba($c-silver, .4)
+    background-color: rgba($gray-lighten-2, .4)
 
   *:last-child
     margin-bottom: 0
