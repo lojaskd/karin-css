@@ -1,13 +1,12 @@
-'use strict';
+/* eslint no-unused-vars:0 */
+'use strict'
 
-import Gulp from 'gulp';
-import Plugins from 'gulp-load-plugins';
+import gulp from 'gulp'
+import stylesheets from './tasks/stylesheets'
+import version from './tasks/version'
 
-import stylesheets from './tasks/stylesheets';
-import version from './tasks/version';
+gulp.task('watch', ['stylesheets'], () => {
+  gulp.watch(`./sass/**/*.sass`, ['stylesheets'])
+})
 
-Gulp.task('watch', ['stylesheets'], () => {
-  Gulp.watch(`./sass/**/*.sass`, ['stylesheets']);
-});
-
-Gulp.task('default', [ 'watch' ]);
+gulp.task('default', [ 'watch' ])
