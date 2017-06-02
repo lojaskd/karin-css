@@ -1,6 +1,6 @@
 {
   "name": "karin-css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "O kit de ferramentas CSS que da beleza aos projetos da LojasKD",
   "main": "gulpfile.babel.js",
   "scripts": {
