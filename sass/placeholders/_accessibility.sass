@@ -1,0 +1,42 @@
+
+// Visually hide elements, leaving them accessible to screen readers
+%visually-hidden
+  position: absolute !important
+  border: 0 !important
+  clip: rect(0, 0, 0, 0) !important
+  width: 1px !important
+  height: 1px !important
+  margin: -1px !important
+  padding: 0 !important
+  overflow: hidden !important
+
+// Give focusable elements a distinct outline
+%focusable
+  box-shadow: 0 0 0 2px color(blue, medium, .7)
+  outline: none
+
+// Alternative highlight for focusable elements
+%focusable-inline
+  text-decoration: underline
+
+%accessibility-aid
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: 0
+  overflow: hidden
+  z-index: -1
+  clip: rect(1px, 1px, 1px, 1px)
+
+  +focus
+    top: 0
+    z-index: 10000
+    width: auto
+    height: auto
+    padding: 0 20px
+    clip: auto
+    font-weight: $font-weight-bold
+    line-height: 50px
+    color: $text
+    text-decoration: none
+    background: $gray-lighten-2
