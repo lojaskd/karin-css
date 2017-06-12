@@ -55,17 +55,18 @@ $font-size-heading-3: 16px
 
 $font-weight-light: 300
 $font-weight-normal: 400
+$font-weight-medium: 500
 $font-weight-bold: 700
 
 $line-height-xsmall: 1
-$line-height-small: 1.3
+$line-height-small: 1.2
 $line-height-base: 1.5
 $line-height-large: 1.8
 $line-height-xlarge: 2
 
 $font-size-h1: $font-size-base-px * 2.25
 $font-size-h2: $font-size-base-px * 2
-$font-size-h3: $font-size-base-px * 1.75
+$font-size-h3: $font-size-base-px * 1.65
 $font-size-h4: $font-size-base-px * 1.375
 $font-size-h5: $font-size-base-px * 1.25
 $font-size-h6: $font-size-base-px
@@ -77,24 +78,29 @@ $fonts-path  : "/dist/fonts"
 
 // ==========  COLORS  ========== //
 
-// Gray pallete
-$gray-lighten-2: #dce4ec
-$gray-lighten-1: #e0e0e0
-$gray: #bdbdbd
-$gray-darken-1: #989898
-$gray-darken-2: #757575
-
 // Blue pallete
-$blue-lighten-2: #03a9f4
-$blue-lighten-1: #039be5
-$blue: #0288d1
-$blue-darken-1: #0277bd
-$blue-darken-2: #01579b
+$blue: #0288D1
+$blue-lighten-1: #E5F3FA
+$blue-lighten-2: #29B6F6
+$blue-lighten-2: #039BE5
+$blue-darken-1: #0277BD
+$blue-darken-2: #01579B
 
 // Yellow pallete
-$yellow-lighten: #ffe57f
-$yellow: #ffd740
-$yellow-darken: #ffc400
+$yellow: #FFCA28
+$yellow-lighten: #FFF9E6
+$yellow-medium-1: #FFE57F
+$yellow-medium-2: #FFD740
+$yellow-darken: #FFC107
+
+// Gray pallete
+$gray: #bdbdbd
+$gray-lighten-1: #EBEBEB
+$gray-lighten-2: #E1E1E1
+$gray-lighten-3: #CCCCCC
+$gray-darken-1: #999999
+$gray-darken-2: #757575
+$gray-darken-3: #424242
 
 // Green pallete
 $green-lighten: #66bb6a
@@ -114,11 +120,11 @@ $red-darken: #d32f2f
 // base pallete
 $white: #fff
 $black: #000
-$text: #424242
-$background: #fff
+$text: $gray-darken-3
+$background: $white
 $link: $blue-lighten-1
 $link-hover: $blue-lighten-2
-$link-focus: $blue-darken-1
+$link-focus: $blue
 
 // status pallete
 $primary: $blue
@@ -132,6 +138,7 @@ $danger: $red
 $z-1: 1px 2px 3px 0 rgba($gray-darken-2, .15)
 $z-2: 0 4px 7px 0  rgba($gray-darken-2, .15)
 $z-3: 0 6px 10px 0 rgba($gray-darken-2, .2)
+$z-4: 0px 5px 13px rgba($black, .3)
 
 // ==========  SPACINGS  ========== //
 
@@ -144,8 +151,8 @@ $spacing-xlarge: 60px
 
 // ==========  SIZES  ========== //
 
-$height-xsmall: 10px
-$height-small: 15px
+$height-xsmall: 20px
+$height-small: 30px
 $height-base: 40px
 $height-large: 60px
 $height-xlarge: 80px
@@ -153,9 +160,9 @@ $height-xlarge: 80px
 // ==========  BORDERS  ========== //
 
 $border-radius-small: 2px
-$border-radius-base: 3px
-$border-radius-large: 4px
-$border-radius-xlarge: 6px
+$border-radius-base: 4px
+$border-radius-large: 6px
+$border-radius-xlarge: 8px
 
 $border-color: $gray
 $border: 1px solid $border-color
