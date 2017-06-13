@@ -1,6 +1,6 @@
 {
   "name": "karin-css",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "O kit de ferramentas CSS que da beleza aos projetos da LojasKD",
   "main": "sass/karin.sass",
   "authors": [
