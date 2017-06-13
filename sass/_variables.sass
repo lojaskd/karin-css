@@ -18,7 +18,7 @@
  * COMPONENTS
  * -----BUTTONS
  * -----TEXT FIELDS
- * -----CHECKBOX
+ * -----CHECKBOX and RADIO
  */
 
 // ==========  GENERAL  ========== //
@@ -130,7 +130,7 @@ $link-focus: $blue-darken-2
 $primary: $blue
 $success: $green
 $warning: $orange
-$info: $blue-lighten-1
+$info: $blue-lighten-2
 $danger: $red
 
 // social pallete
@@ -230,11 +230,23 @@ $button-bg-white-hover: darken($button-bg-white, 5%)
 
 $input-bg: $white
 $input-color: $gray-darken-2
-$input-box-shadow-focus: $info
+$input-box-shadow-focus: $blue
 $input-border: $gray
 $input-border-focus: $primary
 $input-bg-disabled: $gray-lighten-2
 
-// ==========  CHECKBOX  ========== //
+// ==========  CHECKBOX ========== //
 
-$checkbox-size: $height-small
+$checkbox-size: ($height-small / 2)
+$checkbox-bg-hover: $gray
+$checkbox-bg-unselected: $gray-lighten-2
+$checkbox-bg-select: lighten($blue, 10%)
+$checkbox-bg-disabled: $gray-lighten-1
+
+// ========== RADIO  ========== //
+
+$radio-size: ($height-small / 2)
+$radio-bg-hover: $gray
+$radio-bg-unselected: $gray-lighten-2
+$radio-bg-select: lighten($blue, 10%)
+$radio-bg-disabled: $gray-lighten-1
