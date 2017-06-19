@@ -1,12 +1,12 @@
 {
   "name": "@lkd/karin-css",
-  "version": "1.4.0",
+  "version": "1.6.0",
   "description": "O kit de ferramentas CSS que da beleza aos projetos da LojasKD",
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
     "lint": "./node_modules/.bin/eslint ./tasks/*.js --quiet",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"",
     "publish": "npm publish --access=public",
     "prepublish": "npm test && npm run lint",
     "preversion": "npm test && npm run lint"
@@ -15,8 +15,20 @@
     "type": "git",
     "url": "git+https://github.com/lojaskd/karin-css.git"
   },
-  "author": "Fernando Moreira",
+  "keywords": [
+    "sass",
+    "karin",
+    "lkd"
+  ],
+  "author": "LojasKD development team <ti@lojaskd.com.br>",
   "license": "MIT",
+  "engines": {
+    "node": ">=6"
+  },
+  "files": [
+    "sass",
+    "lib"
+  ],
   "bugs": {
     "url": "https://github.com/lojaskd/karin-css/issues"
   },
