@@ -88,6 +88,7 @@
 %button-link
   @extend %button
   box-shadow: none
+  text-decoration: underline
   +button-variant($link, transparent)
 
   &:hover
@@ -96,8 +97,10 @@
 %button-ghost
   @extend %button-link
   border: 1px solid $blue
+  text-decoration: none
 
   &:hover,
   &:focus,
   &:active
+    box-shadow: none
     +button-variant($white, $blue)

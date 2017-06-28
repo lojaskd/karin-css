@@ -78,8 +78,12 @@ $fonts-path  : "/dist/fonts"
 
 // ==========  COLORS  ========== //
 
+// Main pallete
+$primary-color: #ffca28
+$secondary-color: #0288d1
+
 // Blue pallete
-$blue: #0288d1
+$blue: $secondary-color
 $blue-lighten-1: #e5f3fa
 $blue-lighten-2: #29b6f6
 $blue-lighten-2: #039be5
@@ -87,7 +91,7 @@ $blue-darken-1: #0277bd
 $blue-darken-2: #01579b
 
 // Yellow pallete
-$yellow: #ffca28
+$yellow: $primary-color
 $yellow-lighten: #fff9e6
 $yellow-medium-1: #ffe57f
 $yellow-medium-2: #ffd740
@@ -120,15 +124,16 @@ $red-darken: #d32f2f
 // base pallete
 $white: #fff
 $black: #000
-$text: $gray-darken-3
-$text-2: $gray-darken-2
 $background: $white
-$link: $blue
-$link-hover: $blue-lighten-2
+$link: $blue-lighten-2
+$link-hover: $blue
 $link-focus: $blue-darken-2
 
+// Text pallete
+$text: $gray-darken-3
+$text-2: $gray-darken-2
+
 // status pallete
-$primary: $blue
 $success: $green
 $warning: $orange
 $info: $blue-lighten-2
@@ -219,7 +224,7 @@ $button-bg-yellow: $yellow-darken
 $button-yellow: $text
 $button-bg-yellow-hover: darken($button-bg-yellow, 2%)
 
-$button-bg-primary: mix($white, $primary, 20%)
+$button-bg-primary: mix($white, $primary-color, 20%)
 $button-primary: $white
 $button-bg-primary-hover: darken($button-bg-primary, 5%)
 
@@ -233,7 +238,7 @@ $input-bg: $white
 $input-color: $gray-darken-2
 $input-box-shadow-focus: $blue
 $input-border: $gray
-$input-border-focus: $primary
+$input-border-focus: $primary-color
 $input-bg-disabled: $gray-lighten-2
 
 // ==========  CHECKBOX ========== //
