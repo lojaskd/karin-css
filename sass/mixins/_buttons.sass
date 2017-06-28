@@ -8,8 +8,6 @@
 //    $color - the texto color
 //    $background - the background color
 //    $background-hover - default is empty
-//    $shadow - boolean, default is true
-//
 =button-variant($color, $background, $background-hover: '')
   $bg-hover: darken($background, 5%)
   $bg-active: darken($background, 10%)
@@ -21,11 +19,9 @@
   color: $color
   background-color: $background
 
-
   &:hover,
   &:focus
-    color: darken($color, 6%)
-    border-color: $bg-hover
+    color: darken($color, 3%)
     background-color: $bg-hover
 
   &:active

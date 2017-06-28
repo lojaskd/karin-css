@@ -14,20 +14,16 @@
   border: 1px solid $input-border
   border-radius: 8px
   line-height: 1.42857143
-  height: 43px
+  height: 40px
   vertical-align: middle
   color: $input-color
   padding: 10px 15px
   font-family: inherit
-  font-size: initial
-  // box-shadow: 0 2px 0 rgba(darken($input-bg, 20%), .4)
+  font-size: $font-size
 
   +transition(box-shadow .15s ease-in-out)
-
   +appearance(textfield)
-
   +input-control-focus($input-color, $input-bg)
-
   +input-placeholder($input-color)
 
   &::-ms-expand

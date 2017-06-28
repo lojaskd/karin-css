@@ -16,15 +16,14 @@
   white-space: nowrap
   font-family: inherit
   font-weight: $font-weight-normal
-  line-height: $height-base - 2
+  line-height: $height-base
   user-select: none
   -webkit-user-drag: none
   zoom: 1
+  box-shadow: $z-1
+  transition: color .2s ease-in-out, background-color .2s ease-in-out, box-shadow .015s ease-in-out
 
   +button-size(14px, 8px)
-
-  +transition(border-color .2s ease-in-out, color .2s ease-in-out, background-color .2s ease-in-out, transform .015s ease-in-out, box-shadow .015s ease-in-out)
-
   +appearance(none)
 
   &[disabled]
@@ -34,5 +33,71 @@
       opacity: .65
 
   +hover-focus
+    box-shadow: $z-2
     text-decoration: none
     outline: none
+
+%button-blue
+  @extend %button
+  +button-variant($white, $blue)
+
+%button-yellow
+  @extend %button
+  +button-variant($text, $yellow)
+
+%button-gray
+  @extend %button
+  +button-variant($text, $gray)
+
+%button-green
+  @extend %button
+  +button-variant($text, $green)
+
+%button-orange
+  @extend %button
+  +button-variant($text, $orange)
+
+%button-red
+  @extend %button
+  +button-variant($text, $red)
+
+%button-black
+  @extend %button
+  +button-variant($white, $black)
+
+%button-white
+  @extend %button
+  +button-variant($text, $white)
+
+%button-facebook
+  @extend %button
+  +button-variant($white, $facebook)
+
+%button-pinterest
+  @extend %button
+  +button-variant($white, $pinterest)
+
+%button-youtube
+  @extend %button
+  +button-variant($white, $youtube)
+
+%button-instagram
+  @extend %button
+  +button-variant($white, $instagram)
+
+%button-link
+  @extend %button
+  box-shadow: none
+  +button-variant($link, transparent)
+
+  &:hover
+    color: $link-hover
+
+%button-ghost
+  @extend %button-link
+  border: 1px solid $blue
+
+  &:hover,
+  &:focus,
+  &:active
+    +button-variant($white, $blue)
