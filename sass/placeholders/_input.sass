@@ -1,8 +1,3 @@
-// *********************************************************
-//
-// Placeholder for inputs
-//
-// *********************************************************
 
 %input
   width: 100%
@@ -11,7 +6,7 @@
   background-color: $input-bg
   background-image: none
   background-clip: padding-box
-  border: 1px solid $input-border
+  border: $border
   border-radius: 8px
   line-height: 1.42857143
   height: 40px
@@ -20,9 +15,9 @@
   padding: 10px 15px
   font-family: inherit
   font-size: $font-size
+  appearance: none
 
   +transition(box-shadow .15s ease-in-out)
-  +appearance(textfield)
   +input-control-focus($input-color, $input-bg)
   +input-placeholder($input-color)
 

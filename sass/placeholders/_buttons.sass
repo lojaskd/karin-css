@@ -37,70 +37,64 @@
     text-decoration: none
     outline: none
 
+%button-default
+  +button-variant(lighten($button-default, 5%), lighten($button-bg-default, 5%))
+
 %button-blue
-  @extend %button
   +button-variant($white, $blue)
 
 %button-yellow
-  @extend %button
   +button-variant($text, $yellow)
 
 %button-gray
-  @extend %button
   +button-variant($text, $gray)
 
 %button-green
-  @extend %button
   +button-variant($text, $green)
 
 %button-orange
-  @extend %button
   +button-variant($text, $orange)
 
 %button-red
-  @extend %button
   +button-variant($text, $red)
 
 %button-black
-  @extend %button
   +button-variant($white, $black)
 
 %button-white
-  @extend %button
   +button-variant($text, $white)
 
 %button-facebook
-  @extend %button
   +button-variant($white, $facebook)
 
 %button-pinterest
-  @extend %button
   +button-variant($white, $pinterest)
 
 %button-youtube
-  @extend %button
   +button-variant($white, $youtube)
 
 %button-instagram
-  @extend %button
   +button-variant($white, $instagram)
 
 %button-link
-  @extend %button
   box-shadow: none
   text-decoration: underline
   +button-variant($link, transparent)
 
-  &:hover
+  +hover
     color: $link-hover
 
+  +hover-focus-active
+    box-shadow: none
+    background-color: transparent
+
+
 %button-ghost
-  @extend %button-link
+  +button-variant($blue, transparent)
+  box-shadow: none
   border: 1px solid $blue
   text-decoration: none
 
-  &:hover,
-  &:focus,
-  &:active
+  +hover-focus-active
     box-shadow: none
     +button-variant($white, $blue)
