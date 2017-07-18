@@ -1,0 +1,16 @@
+=form-validation($modifier, $modifier-color)
+  .lkd-form-validation--#{$modifier}
+    .lkd-form-validation__message
+      background-color: lighten($modifier-color, 10%)
+
+      &:before
+        border-color: transparent transparent lighten($modifier-color, 10%) transparent
+
+    label
+      color: $modifier-color
+
+    input,
+    select,
+    textarea
+      border-color: $modifier-color
+      background-color: lighten($modifier-color, 40%)
