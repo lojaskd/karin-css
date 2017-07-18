@@ -1,5 +1,10 @@
 %form-group
   width: 100%
   display: block
-  margin: 0 0 $spacing-small
+  margin: 0
   position: relative
+  font-size: $font-size-large
+  +clearfix
+
+  &:not(:last-child)
+    margin-bottom: $spacing-small
