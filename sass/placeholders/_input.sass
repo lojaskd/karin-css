@@ -10,7 +10,6 @@
   border-radius: 8px
   line-height: 1.42857143
   height: 40px
-  vertical-align: middle
   color: $input-color
   padding: 10px 15px
   font-family: inherit
@@ -19,7 +18,7 @@
 
   +transition(box-shadow .15s ease-in-out)
   +input-control-focus($input-color, $input-bg)
-  +input-placeholder(lighten($input-color, 30%))
+  +input-placeholder($input-placeholder-color)
 
   &::-ms-expand
     background-color: transparent
