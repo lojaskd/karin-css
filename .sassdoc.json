@@ -5,8 +5,11 @@
     "alias": false,
     "watermark": true
   },
+  "groups": {
+    "undefined": "general"
+  },
   "package": "./package.json",
-  "theme": "neat",
+  "theme": "flippant",
   "verbose": true,
   "strict": true
 }

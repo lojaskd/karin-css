@@ -1,13 +1,20 @@
-// *********************************************************
-// ----- button-variant ----- //
-// -> Generates the color variations of buttons
-// *********************************************************
+/// Generates the color variations of buttons
+///
+/// @since 1.12.0
+///
+/// @group buttons
+///
+/// @argument {Hexadecimal} $color
+///   the text color
+///
+/// @argument {Hexadecimal} $background
+///   the background color
+///
+/// @argument {Hexadecimal} $background-hover
+///   the background hover color
+///
+/// @access public
 
-//
-// @parameters
-//    $color - the texto color
-//    $background - the background color
-//    $background-hover - default is empty
 =button-variant($color, $background, $background-hover: '')
   $bg-hover: darken($background, 5%)
   $bg-active: darken($background, 10%)

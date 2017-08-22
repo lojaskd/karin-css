@@ -58,6 +58,6 @@
     "husky": "^0.13.4",
     "node-bourbon": "^4.2.8",
     "sassdoc": "^2.3.0",
-    "sassdoc-theme-neat": "0.0.2"
+    "sassdoc-theme-flippant": "^0.1.0"
   }
 }
