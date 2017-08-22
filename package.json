@@ -9,7 +9,9 @@
     "test": "echo \"Error: no test specified\"",
     "publish": "npm publish --access=public",
     "prepublish": "npm test && npm run lint",
-    "preversion": "npm test && npm run lint"
+    "preversion": "npm test && npm run lint",
+    "doc:serve": "npm run doc && http-server ./doc",
+    "doc": "sassdoc ./sass -c .sassdoc.json"
   },
   "repository": {
     "type": "git",
@@ -56,7 +58,10 @@
     "gulp-size": "^2.1.0",
     "gulp-tag-version": "^1.3.0",
     "gulp-util": "^3.0.8",
+    "http-server": "^0.10.0",
     "husky": "^0.13.4",
-    "node-bourbon": "^4.2.8"
+    "node-bourbon": "^4.2.8",
+    "sassdoc": "^2.3.0",
+    "sassdoc-theme-neat": "0.0.2"
   }
 }

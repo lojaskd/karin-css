@@ -1,0 +1,12 @@
+{
+  "dest": "doc",
+  "display": {
+    "access": ["public", "private"],
+    "alias": false,
+    "watermark": true
+  },
+  "package": "./package.json",
+  "theme": "neat",
+  "verbose": true,
+  "strict": true
+}
