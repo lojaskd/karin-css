@@ -6,10 +6,6 @@
   "scripts": {
     "start": "gulp",
     "lint": "./node_modules/.bin/eslint ./tasks/*.js --quiet",
-    "test": "echo \"Error: no test specified\"",
-    "publish": "npm publish --access=public",
-    "prepublish": "npm test && npm run lint",
-    "preversion": "npm test && npm run lint",
     "doc:serve": "npm run doc && http-server ./doc",
     "doc": "sassdoc ./sass -c .sassdoc.json"
   },
