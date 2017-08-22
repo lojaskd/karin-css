@@ -11,10 +11,10 @@ cache:
     - "node_modules"
 before_install:
 - ruby --version
-- rvm install 2.2.2
+- rvm install 2.3.3
 - ruby --version
 before_script:
-- gem install sass sass-convert
+- gem install sass
 script: "yarn doc"
 deploy:
   provider: pages

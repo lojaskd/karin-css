@@ -57,7 +57,6 @@
     "http-server": "^0.10.0",
     "husky": "^0.13.4",
     "node-bourbon": "^4.2.8",
-    "sass-convert": "^0.5.2",
     "sassdoc": "^2.3.0",
     "sassdoc-theme-neat": "0.0.2"
   }
