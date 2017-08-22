@@ -9,6 +9,12 @@ cache:
   yarn: true
   directories:
     - "node_modules"
+before_install:
+- ruby --version
+- rvm install 2.2.2
+- ruby --version
+before_script:
+- gem install sass sass-convert
 script: "yarn doc"
 deploy:
   provider: pages
