@@ -24,7 +24,7 @@ const v = $.util.env.v || 'patch'
 
 function _version (importance) {
   // get all the files to bump version in
-  return gulp.src([`${basePath}package.json`, `${basePath}bower.json`])
+  return gulp.src([`${basePath}package.json`, `${basePath}package-lock.json`])
     .pipe($.bump({ type: importance })) // bump the version number in those files
     .pipe(gulp.dest(`${basePath}`)) // save it back to filesystem
     .pipe($.git.commit('Bumps package version')) // commit the changed version number
